@@ -1,6 +1,9 @@
-.sk_header_main1, .sk_headerblue_main1 {
+[class*=sk_header_main], [class*=sk_headerblue_main] {
   color: white;
   line-height: 1.6;
+}
+
+.sk_header_main1, .sk_headerblue_main1 {
   padding-left: 5px;
   background-color: #3333ff;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3333ff), color-stop(100%, #0000e6));
@@ -11,8 +14,6 @@
 }
 
 .sk_header_main2, .sk_headerblue_main2 {
-  color: white;
-  line-height: 1.6;
   padding-left: 5px;
   background-color: #3333ff;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3333ff), color-stop(100%, #0000e6));
@@ -23,8 +24,6 @@
 }
 
 .sk_header_main3, .sk_headerblue_main3 {
-  color: white;
-  line-height: 1.6;
   padding-left: 5px;
   background-color: #0000e6;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3333ff), color-stop(50%, #0000e6), color-stop(100%, #3333ff));
@@ -40,9 +39,7 @@
 }
 
 .sk_header_main4, .sk_headerblue_main4 {
-  color: white;
-  line-height: 1.6;
-  padding-left: 5px;
+  padding-left: 0.5em;
   background-color: #0000e6;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0000e6), color-stop(100%, #3333ff));
   background-image: -webkit-linear-gradient(top, #0000e6, #3333ff);
@@ -57,8 +54,6 @@
 }
 
 .sk_header_main5, .sk_headerblue_main5 {
-  color: white;
-  line-height: 1.6;
   padding-left: 5px;
   background-color: #0000e6;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #0000e6), color-stop(100%, #ffffff));
@@ -69,8 +64,6 @@
 }
 
 .sk_header_main6, .sk_headerblue_main6 {
-  color: white;
-  line-height: 1.6;
   padding-left: 5px;
   background-color: #0000e6;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, #ffffff), color-stop(100%, #0000e6));
@@ -87,8 +80,6 @@
 }
 
 .sk_header_main7, .sk_headerblue_main7 {
-  color: white;
-  line-height: 1.6;
   padding-left: 5px;
   border-bottom-color: #0000e6;
   border-bottom-style: solid;
@@ -102,8 +93,6 @@
 }
 
 .sk_header_main8, .sk_headerblue_main8 {
-  color: white;
-  line-height: 1.6;
   padding-left: 5px;
   border-bottom-color: #000099;
   border-bottom-style: solid;
@@ -112,19 +101,15 @@
 }
 
 .sk_header_main9, .sk_headerblue_main9 {
-  color: white;
-  line-height: 1.6;
-  padding-left: 5px;
   border-left-color: #7733ff;
   border-left-style: solid;
-  border-left-width: 10px;
+  border-left-width: 0.25em;
+  padding-left: 0.5em;
   background-color: #3333ff;
 }
 
 .sk_header_main10, .sk_headerblue_main10 {
-  color: white;
-  line-height: 1.6;
-  padding-left: 5px;
+  padding-left: 0.5em;
   border-color: #0000e6;
   border-style: solid;
   border-width: 2px;
@@ -141,6 +126,32 @@
   border-radius: 15px;
 }
 
+.sk_header_main11, .sk_headerblue_main11 {
+  padding-left: 5px;
+  background-color: #0000e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3333ff), color-stop(50%, #0000e6), color-stop(100%, #3333ff));
+  background-image: -webkit-linear-gradient(top, #3333ff, #0000e6, #3333ff);
+  background-image: -moz-linear-gradient(top, #3333ff, #0000e6, #3333ff);
+  background-image: -o-linear-gradient(top, #3333ff, #0000e6, #3333ff);
+  background-image: linear-gradient(top, #3333ff, #0000e6, #3333ff);
+  -moz-border-radius-topright: 15px;
+  -webkit-border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -webkit-border-top-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.sk_header_main12, .sk_headerblue_main12 {
+  padding-left: 5px;
+  background-color: #7f66ff;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3333ff), color-stop(100%, #7f66ff));
+  background-image: -webkit-linear-gradient(top, #3333ff, #7f66ff);
+  background-image: -moz-linear-gradient(top, #3333ff, #7f66ff);
+  background-image: -o-linear-gradient(top, #3333ff, #7f66ff);
+  background-image: linear-gradient(top, #3333ff, #7f66ff);
+}
+
 .sk_header_sub1, .sk_headerblue_sub1 {
   color: #4747eb;
   line-height: 1.6;
@@ -150,6 +161,8 @@
   border-bottom-color: #898989;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  background-color: white;
+  margin-bottom: 0;
 }
 
 .sk_header_sub2, .sk_headerblue_sub2 {
@@ -212,6 +225,52 @@
   background-image: linear-gradient(top, #ffffff 10%, #efefef);
 }
 
+.sk_header_sub8, .sk_headerblue_sub8 {
+  color: #4747eb;
+  line-height: 1.6;
+  padding-left: 5px;
+  border-color: #c8c8c8;
+  border-style: solid;
+  border-width: 1px;
+  border-top-color: #3333ff;
+  border-top-style: solid;
+  border-top-width: 5px;
+}
+
+.sk_header_sub9, .sk_headerblue_sub9 {
+  line-height: 1.6;
+  font-weight: bold;
+  color: #4747eb;
+  letter-spacing: 0.5em;
+}
+
+.sk_block_main1, .sk_blockblue_main1 {
+  color: white;
+  padding: 5px;
+  background-color: #3333ff;
+}
+
+.sk_block_main2, .sk_blockblue_main2 {
+  color: white;
+  padding: 5px;
+  background-color: #3333ff;
+  border-color: #0000e6;
+  border-style: dotted;
+  border-width: 2px;
+}
+
+.sk_block_main3, .sk_blockblue_main3 {
+  color: white;
+  padding: 5px;
+  background-color: #3333ff;
+  border-top-color: #0000e6;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-bottom-color: #0000e6;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
 .sk_table_main1, .sk_tableblue_main1 {
   border-collapse: collapse;
   color: #666666;
@@ -232,12 +291,12 @@
 .sk_table_main1 thead th, .sk_table_main1 thead td, .sk_tableblue_main1 thead th, .sk_tableblue_main1 thead td {
   color: white;
   border-color: #1919e6;
-  background-color: #3333ff;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3333ff), color-stop(100%, #000099));
-  background-image: -webkit-linear-gradient(top, #3333ff, #000099);
-  background-image: -moz-linear-gradient(top, #3333ff, #000099);
-  background-image: -o-linear-gradient(top, #3333ff, #000099);
-  background-image: linear-gradient(top, #3333ff, #000099);
+  background-color: #0000e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0000e6), color-stop(100%, #000099));
+  background-image: -webkit-linear-gradient(top, #0000e6, #000099);
+  background-image: -moz-linear-gradient(top, #0000e6, #000099);
+  background-image: -o-linear-gradient(top, #0000e6, #000099);
+  background-image: linear-gradient(top, #0000e6, #000099);
 }
 .sk_table_main1 td:first-child, .sk_table_main1 th:first-child, .sk_tableblue_main1 td:first-child, .sk_tableblue_main1 th:first-child {
   border-left-width: 0;
@@ -263,12 +322,12 @@
 }
 .sk_table_main2 thead th, .sk_table_main2 thead td, .sk_tableblue_main2 thead th, .sk_tableblue_main2 thead td {
   color: white;
-  background-color: #3333ff;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3333ff), color-stop(100%, #000099));
-  background-image: -webkit-linear-gradient(top, #3333ff, #000099);
-  background-image: -moz-linear-gradient(top, #3333ff, #000099);
-  background-image: -o-linear-gradient(top, #3333ff, #000099);
-  background-image: linear-gradient(top, #3333ff, #000099);
+  background-color: #0000e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0000e6), color-stop(100%, #000099));
+  background-image: -webkit-linear-gradient(top, #0000e6, #000099);
+  background-image: -moz-linear-gradient(top, #0000e6, #000099);
+  background-image: -o-linear-gradient(top, #0000e6, #000099);
+  background-image: linear-gradient(top, #0000e6, #000099);
 }
 
 .sk_table_main3, .sk_tableblue_main3 {
@@ -292,12 +351,12 @@
 }
 .sk_table_main3 th, .sk_table_main3 thead td, .sk_tableblue_main3 th, .sk_tableblue_main3 thead td {
   color: white;
-  background-color: #3333ff;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3333ff), color-stop(100%, #000099));
-  background-image: -webkit-linear-gradient(top, #3333ff, #000099);
-  background-image: -moz-linear-gradient(top, #3333ff, #000099);
-  background-image: -o-linear-gradient(top, #3333ff, #000099);
-  background-image: linear-gradient(top, #3333ff, #000099);
+  background-color: #0000e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0000e6), color-stop(100%, #000099));
+  background-image: -webkit-linear-gradient(top, #0000e6, #000099);
+  background-image: -moz-linear-gradient(top, #0000e6, #000099);
+  background-image: -o-linear-gradient(top, #0000e6, #000099);
+  background-image: linear-gradient(top, #0000e6, #000099);
 }
 
 .sk_table_main4, .sk_tableblue_main4 {
@@ -320,12 +379,12 @@
 }
 .sk_table_main4 th, .sk_table_main4 thead td, .sk_tableblue_main4 th, .sk_tableblue_main4 thead td {
   color: white;
-  background-color: #3333ff;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3333ff), color-stop(100%, #000099));
-  background-image: -webkit-linear-gradient(top, #3333ff, #000099);
-  background-image: -moz-linear-gradient(top, #3333ff, #000099);
-  background-image: -o-linear-gradient(top, #3333ff, #000099);
-  background-image: linear-gradient(top, #3333ff, #000099);
+  background-color: #0000e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0000e6), color-stop(100%, #000099));
+  background-image: -webkit-linear-gradient(top, #0000e6, #000099);
+  background-image: -moz-linear-gradient(top, #0000e6, #000099);
+  background-image: -o-linear-gradient(top, #0000e6, #000099);
+  background-image: linear-gradient(top, #0000e6, #000099);
 }
 
 .sk_table_main5, .sk_tableblue_main5 {
@@ -351,12 +410,12 @@
 .sk_table_main5 thead th, .sk_table_main5 thead td, .sk_tableblue_main5 thead th, .sk_tableblue_main5 thead td {
   color: white;
   border-color: #1919e6;
-  background-color: #3333ff;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3333ff), color-stop(100%, #000099));
-  background-image: -webkit-linear-gradient(top, #3333ff, #000099);
-  background-image: -moz-linear-gradient(top, #3333ff, #000099);
-  background-image: -o-linear-gradient(top, #3333ff, #000099);
-  background-image: linear-gradient(top, #3333ff, #000099);
+  background-color: #0000e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0000e6), color-stop(100%, #000099));
+  background-image: -webkit-linear-gradient(top, #0000e6, #000099);
+  background-image: -moz-linear-gradient(top, #0000e6, #000099);
+  background-image: -o-linear-gradient(top, #0000e6, #000099);
+  background-image: linear-gradient(top, #0000e6, #000099);
 }
 
 .sk_table_sub1, .sk_tableblue_sub1 {
@@ -375,12 +434,12 @@
 }
 .sk_table_sub1 tbody th, .sk_table_sub1 th, .sk_tableblue_sub1 tbody th, .sk_tableblue_sub1 th {
   color: #4747eb;
-  border-color: blue;
+  border-color: #0000e6;
   background-color: white;
 }
 .sk_table_sub1 thead th, .sk_table_sub1 thead td, .sk_tableblue_sub1 thead th, .sk_tableblue_sub1 thead td {
   color: #4747eb;
-  border-color: #1919e6;
+  border-color: #0000e6;
   background-color: white;
 }
 
@@ -404,7 +463,7 @@
 }
 .sk_table_sub2 thead th, .sk_table_sub2 thead td, .sk_tableblue_sub2 thead th, .sk_tableblue_sub2 thead td {
   color: #4747eb;
-  border-color: blue;
+  border-color: #0000e6;
   background-color: white;
   border-bottom-color: blue;
   border-bottom-style: solid;
@@ -426,12 +485,12 @@
 }
 .sk_table_sub3 tbody th, .sk_table_sub3 th, .sk_tableblue_sub3 tbody th, .sk_tableblue_sub3 th {
   color: #3333ff;
-  border-color: blue;
+  border-color: #0000e6;
   background-color: white;
 }
 .sk_table_sub3 th, .sk_table_sub3 thead td, .sk_tableblue_sub3 th, .sk_tableblue_sub3 thead td {
   color: #4747eb;
-  border-color: blue;
+  border-color: #0000e6;
   background-color: white;
 }
 
@@ -482,4 +541,18 @@
   color: #4747eb;
   border-color: #1919e6;
   background-color: white;
+}
+
+.sk_list_main1, .sk_listblue_main1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sk_list_main1 > li, .sk_listblue_main1 > li {
+  color: white;
+  padding: 0.25em;
+  background-color: #3333ff;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }

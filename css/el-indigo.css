@@ -1,0 +1,76 @@
+/*
+Syntax error: File to import not found or unreadable: estLayout.sass.
+              Load paths:
+                K:/xampp/htdocs/skin/sass
+                K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 1 of K:/xampp/htdocs/skin/sass/el-indigo.sass
+
+1: K:/xampp/htdocs/skin/sass/el-indigo.sass
+
+Backtrace:
+K:/xampp/htdocs/skin/sass/el-indigo.sass:1
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/import_node.rb:67:in `rescue in import'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/import_node.rb:45:in `import'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/import_node.rb:28:in `imported_file'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/import_node.rb:37:in `css_import?'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/root_node.rb:20:in `render'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `call'
+K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+K:/xampp/Ruby/bin/compass:23:in `load'
+K:/xampp/Ruby/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: estLayout.sass.\A               Load paths:\A                 K:/xampp/htdocs/skin/sass\A                 K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 1 of K:/xampp/htdocs/skin/sass/el-indigo.sass\A \A 1: K:/xampp/htdocs/skin/sass/el-indigo.sass"; }

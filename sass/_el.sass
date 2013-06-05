@@ -1,57 +1,45 @@
 @import "compass/css3"
-@mixin skin($type, $color)
-
+// EST Layout //
+@mixin el($type, $color)
 	$color: lighten($color, 10%)
 	$colorCute: adjust_hue(saturate(lighten($color, 10%), 80%), 10)
 	$colorDark: darken($color, 15%)
 	$colorVeryDark: darken($color, 30%)
 	$colorDeSat: desaturate($color, 20%)
-	$colorHue: adjust_hue($color, 20%)
-
+	$colorHue: adjust_hue($color, 20%)			
 	// Header Main //
-	.sk_header_main1, .sk_header#{$type}_main1
+	[class*=sk_header_main], [class*=sk_header#{$type}_main]
 		color: #ffffff
 		line-height: 1.6
+	.sk_header_main1, .sk_header#{$type}_main1
 		padding-left: 5px
 		background-color: $color
 		@include background-image(linear-gradient(top, $color, $colorDark))
 	.sk_header_main2, .sk_header#{$type}_main2
-		color: #ffffff
-		line-height: 1.6
 		padding-left: 5px
 		background-color: $color
 		@include background-image(linear-gradient(top, $color, $colorDark))
 	.sk_header_main3, .sk_header#{$type}_main3
-		color: #ffffff
-		line-height: 1.6
 		padding-left: 5px
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $color, $colorDark, $color))
 		@include border-radius(5px)
 	.sk_header_main4, .sk_header#{$type}_main4
-		color: #ffffff
-		line-height: 1.6
-		padding-left: 5px
+		padding-left: 0.5em
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $colorDark, $color))
 		@include border-radius(15px)
 	.sk_header_main5, .sk_header#{$type}_main5
-		color: #ffffff
-		line-height: 1.6
 		padding-left: 5px
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $colorDark 40%, #ffffff))
 	.sk_header_main6, .sk_header#{$type}_main6
-		color: #ffffff
-		line-height: 1.6
 		padding-left: 5px
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, #ffffff 10%, $colorDark))
 		@include border-bottom-left-radius(10px)
 		@include border-bottom-right-radius(10px)
 	.sk_header_main7, .sk_header#{$type}_main7
-		color: #ffffff
-		line-height: 1.6
 		padding-left: 5px
 		border-bottom-color: $colorDark
 		border-bottom-style: solid
@@ -59,31 +47,35 @@
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, #ffffff 10%, $colorDark))
 	.sk_header_main8, .sk_header#{$type}_main8
-		color: #ffffff
-		line-height: 1.6
 		padding-left: 5px
 		border-bottom-color: $colorVeryDark
 		border-bottom-style: solid
 		border-bottom-width: 2px
 		background-color: $colorDark
 	.sk_header_main9, .sk_header#{$type}_main9
-		color: #ffffff
-		line-height: 1.6
-		padding-left: 5px
 		border-left-color: $colorHue
 		border-left-style: solid
-		border-left-width: 10px	
+		border-left-width: 0.25em
+		padding-left: 0.5em
 		background-color: $color
 	.sk_header_main10, .sk_header#{$type}_main10
-		color: #ffffff
-		line-height: 1.6
-		padding-left: 5px
+		padding-left: 0.5em
 		border-color: $colorDark
 		border-style: solid
 		border-width: 2px
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $colorDark, $color))
 		@include border-radius(15px)
+	.sk_header_main11, .sk_header#{$type}_main11
+		padding-left: 5px
+		background-color: $colorDark
+		@include background-image(linear-gradient(top, $color, $colorDark, $color))
+		@include border-top-right-radius(15px)
+		@include border-top-left-radius(15px)
+	.sk_header_main12, .sk_header#{$type}_main12
+		padding-left: 5px
+		background-color: $colorCute
+		@include background-image(linear-gradient(top, $color, $colorCute))	
 
 	// Header Sub //
 	.sk_header_sub1, .sk_header#{$type}_sub1
@@ -95,6 +87,8 @@
 		border-bottom-color: #898989
 		border-bottom-style: solid
 		border-bottom-width: 1px
+		background-color: #ffffff
+		margin-bottom: 0
 	.sk_header_sub2, .sk_header#{$type}_sub2
 		color: $colorDeSat
 		line-height: 1.6
@@ -139,16 +133,49 @@
 		border-bottom-width: 2px
 		background-color: #ffffff
 		@include background-image(linear-gradient(top, #ffffff 10%, #efefef))
+	.sk_header_sub8, .sk_header#{$type}_sub8
+		color: $colorDeSat
+		line-height: 1.6
+		padding-left: 5px
+		border-color: #C8C8C8
+		border-style: solid	
+		border-width: 1px
+		border-top-color: $color
+		border-top-style: solid	
+		border-top-width: 5px
+	.sk_header_sub9, .sk_header#{$type}_sub9
+		line-height: 1.6
+		font-weight: bold
+		color: $colorDeSat
+		letter-spacing: 0.5em
 
+	// Block(Main) //
+	.sk_block_main1, .sk_block#{$type}_main1
+		color: #ffffff
+		padding: 5px
+		background-color: $color
+	.sk_block_main2, .sk_block#{$type}_main2
+		color: #ffffff
+		padding: 5px
+		background-color: $color
+		border-color: $colorDark
+		border-style: dotted
+		border-width: 2px		
+	.sk_block_main3, .sk_block#{$type}_main3
+		color: #ffffff
+		padding: 5px
+		background-color: $color
+		border-top-color: $colorDark
+		border-top-style: solid
+		border-top-width: 2px		
+		border-bottom-color: $colorDark
+		border-bottom-style: solid
+		border-bottom-width: 2px	
 
-	// Block //
-	.sk_block_1, .sk_block#{$type}_1
-
-	// Table //	
-
+	// Table(Main) //	
 	.sk_table_main1, .sk_table#{$type}_main1
 		border-collapse: collapse
-		color: #666
+		color: #666666
 		background-color: #ffffff
 		tr
 		td, th
@@ -164,8 +191,8 @@
 		thead th, thead td
 			color: #ffffff
 			border-color: darken($colorDeSat, 10%)
-			background-color: $color
-			@include background-image(linear-gradient(top, $color, darken($color, 30%)))
+			background-color: $colorDark
+			@include background-image(linear-gradient(top, $colorDark, $colorVeryDark))
 		td:first-child, th:first-child
 			border-left-width: 0
 	.sk_table_main2, .sk_table#{$type}_main2
@@ -184,8 +211,8 @@
 			border-bottom-color: darken($colorDeSat, 10%)
 		thead th, thead td
 			color: #ffffff
-			background-color: $color
-			@include background-image(linear-gradient(top, $color, darken($color, 30%)))
+			background-color: $colorDark
+			@include background-image(linear-gradient(top, $colorDark, $colorVeryDark))
 		td:first-child, th:first-child	
 	.sk_table_main3, .sk_table#{$type}_main3
 		border-collapse: collapse
@@ -206,8 +233,8 @@
 			border-bottom-color: darken($colorDeSat, 10%)	
 		th, thead td
 			color: #ffffff
-			background-color: $color
-			@include background-image(linear-gradient(top, $color, darken($color, 30%)))
+			background-color: $colorDark
+			@include background-image(linear-gradient(top, $colorDark, $colorVeryDark))
 		td:first-child, th:first-child
 	.sk_table_main4, .sk_table#{$type}_main4
 		border-collapse: collapse
@@ -225,8 +252,8 @@
 			border-bottom-color: darken($colorDeSat, 10%)
 		th, thead td
 			color: #ffffff
-			background-color: $color
-			@include background-image(linear-gradient(top, $color, darken($color, 30%)))
+			background-color: $colorDark
+			@include background-image(linear-gradient(top, $colorDark, $colorVeryDark))
 		td:first-child, th:first-child	
 	.sk_table_main5, .sk_table#{$type}_main5
 		border-collapse: collapse
@@ -249,8 +276,8 @@
 		thead th, thead td
 			color: #ffffff
 			border-color: darken($colorDeSat, 10%)
-			background-color: $color
-			@include background-image(linear-gradient(top, $color, darken($color, 30%)))
+			background-color: $colorDark
+			@include background-image(linear-gradient(top, $colorDark, $colorVeryDark))
 		td:first-child, th:first-child
 	.sk_table_sub1, .sk_table#{$type}_sub1
 		border-collapse: collapse
@@ -267,11 +294,11 @@
 			border-width: 1px
 		tbody th, th
 			color: $colorDeSat
-			border-color: darken($color, 10%)
+			border-color: $colorDark
 			background-color: #ffffff
 		thead th, thead td
 			color: $colorDeSat
-			border-color: darken($colorDeSat, 10%)
+			border-color: $colorDark
 			background-color: #ffffff
 		td:first-child, th:first-child
 	.sk_table_sub2, .sk_table#{$type}_sub2
@@ -290,7 +317,7 @@
 			border-bottom-color: darken($colorDeSat, 10%)
 		thead th, thead td
 			color: $colorDeSat
-			border-color: darken($color, 10%)
+			border-color: $colorDark
 			background-color: #ffffff
 			border-bottom-color: darken($color, 10%)
 			border-bottom-style: solid	
@@ -310,11 +337,11 @@
 			border-right-width: 1px
 		tbody th, th
 			color: $color
-			border-color: darken($color, 10%)
+			border-color: $colorDark
 			background-color: #ffffff
 		th, thead td
 			color: $colorDeSat
-			border-color: darken($color, 10%)
+			border-color: $colorDark
 			background-color: #ffffff
 		td:first-child, th:first-child
 	.sk_table_sub4, .sk_table#{$type}_sub4
@@ -357,18 +384,22 @@
 			background-color: #ffffff
 		td:first-child, th:first-child	
 
+	// List(Main) //	
+	.sk_list_main1, .sk_list#{$type}_main1
+		list-style: none
+		margin: 0
+		padding: 0
+		>li
+			color: #ffffff
+			padding: 0.25em
+			background-color: $color
+			border-bottom-color: #ffffff
+			border-bottom-style: solid	
+			border-bottom-width: 1px	
 
+	// Menu(Main) //	
+	.sk_menu_main1, .sk_menu#{$type}_main1
 
-
-
-
-
-	// List //	
-	.sk_list_1, .sk_list#{$type}_1
-
-	// Menu //	
-	.sk_menu_1, .sk_menu#{$type}_1
-
-	// Btn //
-	.sk_btn_1, .sk_btn#{$type}_1	
+	// Btn(Main) //
+	.sk_btn_main1, .sk_btn#{$type}_main1	
 
