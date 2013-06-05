@@ -1,12 +1,367 @@
+@import "compass/css3"
 @mixin skin($type, $color)
-	// Header //
-	.sk_header_1, .sk_header#{$type}_1
+
+	$color: lighten($color, 10%)
+	$colorCute: adjust_hue(saturate(lighten($color, 10%), 80%), 10)
+	$colorDark: darken($color, 15%)
+	$colorVeryDark: darken($color, 30%)
+	$colorDeSat: desaturate($color, 20%)
+	$colorHue: adjust_hue($color, 20%)
+
+	// Header Main //
+	.sk_header_main1, .sk_header#{$type}_main1
+		color: #ffffff
+		line-height: 1.6
+		padding-left: 5px
+		background-color: $color
+		@include background-image(linear-gradient(top, $color, $colorDark))
+	.sk_header_main2, .sk_header#{$type}_main2
+		color: #ffffff
+		line-height: 1.6
+		padding-left: 5px
+		background-color: $color
+		@include background-image(linear-gradient(top, $color, $colorDark))
+	.sk_header_main3, .sk_header#{$type}_main3
+		color: #ffffff
+		line-height: 1.6
+		padding-left: 5px
+		background-color: $colorDark
+		@include background-image(linear-gradient(top, $color, $colorDark, $color))
+		@include border-radius(5px)
+	.sk_header_main4, .sk_header#{$type}_main4
+		color: #ffffff
+		line-height: 1.6
+		padding-left: 5px
+		background-color: $colorDark
+		@include background-image(linear-gradient(top, $colorDark, $color))
+		@include border-radius(15px)
+	.sk_header_main5, .sk_header#{$type}_main5
+		color: #ffffff
+		line-height: 1.6
+		padding-left: 5px
+		background-color: $colorDark
+		@include background-image(linear-gradient(top, $colorDark 40%, #ffffff))
+	.sk_header_main6, .sk_header#{$type}_main6
+		color: #ffffff
+		line-height: 1.6
+		padding-left: 5px
+		background-color: $colorDark
+		@include background-image(linear-gradient(top, #ffffff 10%, $colorDark))
+		@include border-bottom-left-radius(10px)
+		@include border-bottom-right-radius(10px)
+	.sk_header_main7, .sk_header#{$type}_main7
+		color: #ffffff
+		line-height: 1.6
+		padding-left: 5px
+		border-bottom-color: $colorDark
+		border-bottom-style: solid
+		border-bottom-width: 2px
+		background-color: $colorDark
+		@include background-image(linear-gradient(top, #ffffff 10%, $colorDark))
+	.sk_header_main8, .sk_header#{$type}_main8
+		color: #ffffff
+		line-height: 1.6
+		padding-left: 5px
+		border-bottom-color: $colorVeryDark
+		border-bottom-style: solid
+		border-bottom-width: 2px
+		background-color: $colorDark
+	.sk_header_main9, .sk_header#{$type}_main9
+		color: #ffffff
+		line-height: 1.6
+		padding-left: 5px
+		border-left-color: $colorHue
+		border-left-style: solid
+		border-left-width: 10px	
+		background-color: $color
+	.sk_header_main10, .sk_header#{$type}_main10
+		color: #ffffff
+		line-height: 1.6
+		padding-left: 5px
+		border-color: $colorDark
+		border-style: solid
+		border-width: 2px
+		background-color: $colorDark
+		@include background-image(linear-gradient(top, $colorDark, $color))
+		@include border-radius(15px)
+
+	// Header Sub //
+	.sk_header_sub1, .sk_header#{$type}_sub1
+		color: $colorDeSat
+		line-height: 1.6
+		border-top-color: #dcdcdc
+		border-top-style: solid	
+		border-top-width: 5px
+		border-bottom-color: #898989
+		border-bottom-style: solid
+		border-bottom-width: 1px
+	.sk_header_sub2, .sk_header#{$type}_sub2
+		color: $colorDeSat
+		line-height: 1.6
+		border-left-color: #D5D4D9
+		border-left-style: solid	
+		border-left-width: 5px
+		padding-left: 5px
+	.sk_header_sub3, .sk_header#{$type}_sub3
+		color: $colorDeSat
+		line-height: 1.6
+		border-left-color: $color
+		border-left-style: solid	
+		border-left-width: 5px
+		padding-left: 5px
+	.sk_header_sub4, .sk_header#{$type}_sub4
+		color: $colorDeSat
+		line-height: 1.6
+		border-bottom-color: #C8C8C8
+		border-bottom-style: dotted	
+		border-bottom-width: 1px
+	.sk_header_sub5, .sk_header#{$type}_sub5
+		color: $colorDeSat
+		line-height: 1.6
+		padding-left: 5px
+		border-color: #C8C8C8
+		border-style: solid	
+		border-width: 1px
+		border-left-color: $color
+		border-left-style: solid	
+		border-left-width: 5px
+	.sk_header_sub6, .sk_header#{$type}_sub6
+		color: $colorDeSat
+		line-height: 1.6
+		border-bottom-color: $colorDeSat
+		border-bottom-style: solid
+		border-bottom-width: 5px
+	.sk_header_sub7, .sk_header#{$type}_sub7
+		color: $colorDark
+		line-height: 1.6
+		border-bottom-color: $colorDark
+		border-bottom-style: solid
+		border-bottom-width: 2px
+		background-color: #ffffff
+		@include background-image(linear-gradient(top, #ffffff 10%, #efefef))
+
 
 	// Block //
 	.sk_block_1, .sk_block#{$type}_1
 
 	// Table //	
-	.sk_table_1, .sk_table#{$type}_1
+
+	.sk_table_main1, .sk_table#{$type}_main1
+		border-collapse: collapse
+		color: #666
+		background-color: #ffffff
+		tr
+		td, th
+			padding: 5px
+			border-color: #e2e2e2
+			border-style: solid
+			border-width: 1px
+		tbody th, th
+			color: #ffffff
+			background-color: $colorDeSat	
+			background-image: none
+			border-bottom-color: darken($colorDeSat, 10%)
+		thead th, thead td
+			color: #ffffff
+			border-color: darken($colorDeSat, 10%)
+			background-color: $color
+			@include background-image(linear-gradient(top, $color, darken($color, 30%)))
+		td:first-child, th:first-child
+			border-left-width: 0
+	.sk_table_main2, .sk_table#{$type}_main2
+		border-collapse: collapse
+		background-color: #ffffff	
+		tr
+			border-bottom-color: #e2e2e2
+			border-bottom-style: solid	
+			border-bottom-width: 1px
+		td, th
+			padding: 5px
+		tbody th, th
+			color: #ffffff
+			background-color: $colorDeSat	
+			background-image: none
+			border-bottom-color: darken($colorDeSat, 10%)
+		thead th, thead td
+			color: #ffffff
+			background-color: $color
+			@include background-image(linear-gradient(top, $color, darken($color, 30%)))
+		td:first-child, th:first-child	
+	.sk_table_main3, .sk_table#{$type}_main3
+		border-collapse: collapse
+		background-color: #ffffff
+		border-color: $colorDeSat
+		border-style: solid
+		border-width: 3px
+		tr
+		td, th
+			padding: 5px
+			border-right-color: $colorDeSat
+			border-right-style: solid	
+			border-right-width: 1px
+		tbody th, th
+			color: #ffffff
+			background-color: $colorDeSat	
+			background-image: none
+			border-bottom-color: darken($colorDeSat, 10%)	
+		th, thead td
+			color: #ffffff
+			background-color: $color
+			@include background-image(linear-gradient(top, $color, darken($color, 30%)))
+		td:first-child, th:first-child
+	.sk_table_main4, .sk_table#{$type}_main4
+		border-collapse: collapse
+		background-color: #ffffff	
+		tr
+			border-bottom-color: $colorDeSat
+			border-bottom-style: solid	
+			border-bottom-width: 1px
+		td, th
+			padding: 5px
+		tbody th, th
+			color: #ffffff
+			background-color: $colorDeSat	
+			background-image: none
+			border-bottom-color: darken($colorDeSat, 10%)
+		th, thead td
+			color: #ffffff
+			background-color: $color
+			@include background-image(linear-gradient(top, $color, darken($color, 30%)))
+		td:first-child, th:first-child	
+	.sk_table_main5, .sk_table#{$type}_main5
+		border-collapse: collapse
+		color: #666
+		border-color: darken($colorDeSat, 10%)
+		border-style: solid	
+		border-width: 1px
+		background-color: #ffffff
+		tr
+		td, th
+			padding: 5px
+			border-color: $colorDeSat
+			border-style: solid
+			border-width: 1px
+		tbody th, th
+			color: #ffffff
+			background-color: $colorDeSat	
+			background-image: none
+			border-bottom-color: darken($color, 10%)
+		thead th, thead td
+			color: #ffffff
+			border-color: darken($colorDeSat, 10%)
+			background-color: $color
+			@include background-image(linear-gradient(top, $color, darken($color, 30%)))
+		td:first-child, th:first-child
+	.sk_table_sub1, .sk_table#{$type}_sub1
+		border-collapse: collapse
+		color: #666
+		border-color: darken($color, 10%)
+		border-style: solid	
+		border-width: 1px
+		background-color: #ffffff
+		tr
+		td, th
+			padding: 5px
+			border-color: #e2e2e2
+			border-style: solid
+			border-width: 1px
+		tbody th, th
+			color: $colorDeSat
+			border-color: darken($color, 10%)
+			background-color: #ffffff
+		thead th, thead td
+			color: $colorDeSat
+			border-color: darken($colorDeSat, 10%)
+			background-color: #ffffff
+		td:first-child, th:first-child
+	.sk_table_sub2, .sk_table#{$type}_sub2
+		border-collapse: collapse
+		background-color: #ffffff	
+		tr
+			border-bottom-color: #e2e2e2
+			border-bottom-style: solid	
+			border-bottom-width: 1px
+		td, th
+			padding: 5px
+		tbody th, th
+			color: #ffffff
+			background-color: $color	
+			background-image: none
+			border-bottom-color: darken($colorDeSat, 10%)
+		thead th, thead td
+			color: $colorDeSat
+			border-color: darken($color, 10%)
+			background-color: #ffffff
+			border-bottom-color: darken($color, 10%)
+			border-bottom-style: solid	
+			border-bottom-width: 2px
+		td:first-child, th:first-child	
+	.sk_table_sub3, .sk_table#{$type}_sub3
+		border-collapse: collapse
+		background-color: #ffffff
+		border-color: $colorDeSat
+		border-style: solid
+		border-width: 2px
+		tr
+		td, th
+			padding: 5px
+			border-right-color: $color
+			border-right-style: solid	
+			border-right-width: 1px
+		tbody th, th
+			color: $color
+			border-color: darken($color, 10%)
+			background-color: #ffffff
+		th, thead td
+			color: $colorDeSat
+			border-color: darken($color, 10%)
+			background-color: #ffffff
+		td:first-child, th:first-child
+	.sk_table_sub4, .sk_table#{$type}_sub4
+		border-collapse: collapse
+		background-color: #ffffff	
+		tr
+			border-bottom-color: $color
+			border-bottom-style: solid	
+			border-bottom-width: 1px
+		td, th
+			padding: 5px
+		tbody th, th
+			color: $colorDeSat
+			border-color: darken($colorDeSat, 10%)
+			background-color: #ffffff
+		th, thead td
+			color: $colorDeSat
+			border-color: darken($colorDeSat, 10%)
+			background-color: #ffffff
+		td:first-child, th:first-child	
+	.sk_table_sub5, .sk_table#{$type}_sub5
+		border-collapse: collapse
+		background-color: #ffffff
+		border-top-color: $color
+		border-top-style: solid	
+		border-top-width: 3px	
+		tr
+			border-bottom-color: $color
+			border-bottom-style: solid	
+			border-bottom-width: 1px
+		td, th
+			padding: 5px
+		tbody th, th
+			color: $colorDeSat
+			border-color: darken($colorDeSat, 10%)
+			background-color: #ffffff
+		th, thead td
+			color: $colorDeSat
+			border-color: darken($colorDeSat, 10%)
+			background-color: #ffffff
+		td:first-child, th:first-child	
+
+
+
+
+
+
 
 	// List //	
 	.sk_list_1, .sk_list#{$type}_1
