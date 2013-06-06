@@ -1,26 +1,27 @@
-@import "compass/css3"
 // EST Layout //
+@import "compass/css3"
 @mixin el($type, $color)
+	// Color Set //
 	$color: lighten($color, 10%)
 	$colorCute: adjust_hue(saturate(lighten($color, 10%), 80%), 10)
 	$colorDark: darken($color, 15%)
 	$colorVeryDark: darken($color, 30%)
 	$colorDeSat: desaturate($color, 20%)
-	$colorHue: adjust_hue($color, 20%)			
+	$colorHue: adjust_hue($color, 20%)
 	// Header Main //
 	[class*=el_header_main], [class*=el_header#{$type}_main]
 		color: #ffffff
 		line-height: 1.6
 	.el_header_main1, .el_header#{$type}_main1
-		padding-left: 5px
+		padding-left: 0.5em
 		background-color: $color
 		@include background-image(linear-gradient(top, $color, $colorDark))
 	.el_header_main2, .el_header#{$type}_main2
-		padding-left: 5px
+		padding-left: 0.5em
 		background-color: $color
 		@include background-image(linear-gradient(top, $color, $colorDark))
 	.el_header_main3, .el_header#{$type}_main3
-		padding-left: 5px
+		padding-left: 0.5em
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $color, $colorDark, $color))
 		@include border-radius(5px)
@@ -30,24 +31,24 @@
 		@include background-image(linear-gradient(top, $colorDark, $color))
 		@include border-radius(15px)
 	.el_header_main5, .el_header#{$type}_main5
-		padding-left: 5px
+		padding-left: 0.5em
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $colorDark 40%, #ffffff))
 	.el_header_main6, .el_header#{$type}_main6
-		padding-left: 5px
+		padding-left: 0.5em
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, #ffffff 10%, $colorDark))
 		@include border-bottom-left-radius(10px)
 		@include border-bottom-right-radius(10px)
 	.el_header_main7, .el_header#{$type}_main7
-		padding-left: 5px
+		padding-left: 0.5em
 		border-bottom-color: $colorDark
 		border-bottom-style: solid
 		border-bottom-width: 2px
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, #ffffff 10%, $colorDark))
 	.el_header_main8, .el_header#{$type}_main8
-		padding-left: 5px
+		padding-left: 0.5em
 		border-bottom-color: $colorVeryDark
 		border-bottom-style: solid
 		border-bottom-width: 2px
@@ -67,15 +68,30 @@
 		@include background-image(linear-gradient(top, $colorDark, $color))
 		@include border-radius(15px)
 	.el_header_main11, .el_header#{$type}_main11
-		padding-left: 5px
+		padding-left: 0.5em
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $color, $colorDark, $color))
 		@include border-top-right-radius(15px)
 		@include border-top-left-radius(15px)
 	.el_header_main12, .el_header#{$type}_main12
-		padding-left: 5px
+		padding-left: 0.5em
 		background-color: $colorCute
 		@include background-image(linear-gradient(top, $color, $colorCute))	
+	.el_header_main13, .el_header#{$type}_main13
+		position: relative
+		padding-left: 0.5em
+		background-color: $colorDark
+		border-top-color: $colorDark
+		border-top-style: solid
+		border-top-width: 2px
+		&:after
+			content: ""
+			width: 60%
+			height: 100%
+			position: absolute
+			z-index: 9999
+			right: 0
+			background-color: #ffffff
 
 	// Header Sub //
 	.el_header_sub1, .el_header#{$type}_sub1
@@ -148,6 +164,28 @@
 		font-weight: bold
 		color: $colorDeSat
 		letter-spacing: 0.5em
+	.el_header_sub10, .el_header#{$type}_sub10
+		line-height: 1.6
+		font-weight: bold
+		color: $colorDeSat
+		padding-top: 0.25em
+		padding-bottom: 0.25em
+		border-top-color: #C8C8C8
+		border-top-style: solid	
+		border-top-width: 1px		
+		border-bottom-color: #C8C8C8
+		border-bottom-style: solid	
+		border-bottom-width: 1px	
+		&:before
+			content: "| "	
+	.el_header_sub11, .el_header#{$type}_sub11
+		line-height: 1.6
+		font-weight: bold
+		color: $colorDeSat
+		padding-bottom: 0.25em	
+		border-bottom-color: $colorDeSat
+		border-bottom-style: solid	
+		border-bottom-width: 1px	
 
 	// Block(Main) //
 	.el_block_main1, .el_block#{$type}_main1

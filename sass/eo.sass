@@ -1,0 +1,249 @@
+// EST Order //
+@import "compass/css3"
+
+// Width & Height //
+@for $i from 1 through 20
+	.eo_width_#{$i*5}
+		width: $i * 5%
+	.eo_height_#{$i*5}
+		height: $i * 5%
+
+// Position //
+.eo_posAbsolute
+	position: absolute
+.eo_posRelative
+	position: relative
+.eo_posFixed
+	position: fixed
+
+// Background //	
+.eo_bgRed
+	background-color: #FF0000
+.eo_bgOrange
+	background-color: #FFA500
+.eo_bgYellow
+	background-color: #FFBF00
+.eo_bgGreen
+	background-color: #008000
+.eo_bgBlue
+	background-color: #0000FF
+.eo_bgIndigo
+	background-color: #4B0082
+.eo_bgViolet
+	background-color: #800880
+
+// text //	
+.eo_textRed
+	background-color: #FF0000
+.eo_textOrange
+	background-color: #FFA500
+.eo_textYellow
+	background-color: #FFBF00
+.eo_textGreen
+	background-color: #008000
+.eo_textBlue
+	background-color: #0000FF
+.eo_textIndigo
+	background-color: #4B0082
+.eo_textViolet
+	background-color: #800880
+
+// Opacity //	
+.eo_opacityMin
+	@include opacity(0.8)
+.eo_opacityMax
+	@include opacity(0.3)
+@for $i from 1 through 10
+	.eo_opacity_#{$i}
+		@include opacity($i*0.1)
+
+// Padding //
+.eo_padding
+	padding-left: 0.5em
+	padding-bottom: 0.5em
+	padding-top: 0.5em
+	padding-right: 0.5em
+.eo_padding_x
+	padding-left: 0.5em
+	padding-right: 0.5em
+.eo_padding_y
+	padding-bottom: 0.5em
+	padding-top: 0.5em
+.eo_paddingMax
+	padding-left: 1em
+	padding-bottom: 1em
+	padding-top: 1em
+	padding-right: 1em
+.eo_paddingMin
+	padding-left: 0.25em
+	padding-bottom: 0.25em
+	padding-top: 0.25em
+	padding-right: 0.25em
+@for $i from 1 through 6
+	.eo_padding_#{$i*5}
+		padding-left: #{$i*5}px
+		padding-bottom: #{$i*5}px
+		padding-top: #{$i*5}px
+		padding-right: #{$i*5}px
+	.eo_paddingLeft_#{$i*5}
+		padding-left: #{$i*5}px
+	.eo_paddingRight_#{$i*5}
+		padding-right: #{$i*5}px
+	.eo_paddingBottom_#{$i*5}
+		padding-bottom: #{$i*5}px
+	.eo_paddingTop_#{$i*5}
+		padding-top: #{$i*5}px
+
+// Margin //
+.eo_margin
+	margin-left: 0.5em
+	margin-bottom: 0.5em
+	margin-top: 0.5em
+	margin-right: 0.5em
+.eo_margin_x
+	margin-left: 0.5em
+	margin-right: 0.5em
+.eo_margin_y
+	margin-bottom: 0.5em
+	margin-top: 0.5em
+.eo_marginMax
+	margin-left: 1em
+	margin-bottom: 1em
+	margin-top: 1em
+	margin-right: 1em
+.eo_marginMin
+	margin-left: 0.25em
+	margin-bottom: 0.25em
+	margin-top: 0.25em
+	margin-right: 0.25em
+@for $i from 1 through 6
+	.eo_margin#{$i*5}
+		margin-left: #{$i*5}px
+		margin-bottom: #{$i*5}px
+		margin-top: #{$i*5}px
+		margin-right: #{$i*5}px
+	.eo_marginLeft_#{$i*5}
+		margin-left: #{$i*5}px
+	.eo_marginRight_#{$i*5}
+		margin-right: #{$i*5}px
+	.eo_marginBottom_#{$i*5}
+		margin-bottom: #{$i*5}px
+	.eo_marginTop_#{$i*5}
+		margin-top: #{$i*5}px
+
+// Pull //
+.eo_pullLeft
+	float: left
+.eo_pullRight
+	float: right
+.eo_pullCenter
+	margin: 0 auto 
+
+// Pull //	
+.eo_pull_x
+	display: inline
+	>li, >dt, >dd
+		display: inline
+.eo_pull_y
+	display: block
+	>li, >dt, >dd
+		display: block
+
+// Shadow //	
+.eo_shadow
+	@include single-box-shadow(#aaaaaa, 0, 0, 0.5em)
+.eo_shadowMin
+	@include single-box-shadow(#cccccc, 0, 0, 0.5em)
+.eo_shadowMax
+	@include single-box-shadow(#888888, 0, 0, 0.5em)
+@for $i from 1 through 10
+	.eo_shadow_#{$i}
+		@include single-box-shadow(#aaaaaa, 0, 0, $i)
+
+// Radius //
+.eo_radius
+	@include border-radius(0.5em)
+.eo_radiusMin
+	@include border-radius(0.25em)
+.eo_radiusMax
+	@include border-radius(1em)
+@for $i from 1 through 10
+	.eo_radius_#{$i}
+		@include border-radius($i)
+
+// Fix //
+.eo_fixTopLeft
+	position: fixed
+	top: 0
+	left: 0
+.eo_fixTopRight
+	position: fixed
+	top: 0
+	right: 0
+.eo_fixBottomLeft
+	position: fixed
+	bottom: 0
+	left: 0		
+.eo_fixBottomLeft
+	position: fixed
+	bottom: 0
+	right: 0
+
+// Clear //
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+	&.eo_clearStyle
+		margin: 0
+		padding: 0
+		border: 0
+		font: inherit
+		font-size: 100%
+		vertical-align: baseline
+		background: none
+	&.eo_clearFix
+		&:before, &:after
+			display: table
+			line-height: 0
+			content: ""
+		&:after
+			clear: both
+	&.eo_clearText
+		text-indent: -9999px
+		white-space: nowrap
+		line-height: 0
+		font-size: 0
+
+// Hide //
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 	
+	&.eo_hide
+		display: none
+	&.eo_hideRadius
+		@include border-radius(0)
+	&.eo_hideBorder
+		border-width: 0
+		>td, >tr, >th, >li, >dt, >dd
+			border-width: 0
+	&.eo_hideBorder_x
+		border-top-width: 0
+		border-bottom-width: 0
+		>td, >tr, >th, >li, >dt, >dd
+		border-top-width: 0
+		border-bottom-width: 0
+	&.eo_hideBorder_y
+		border-left-width: 0
+		border-right-width: 0
+		>td, >tr, >th, >li, >dt, >dd
+		border-left-width: 0
+		border-right-width: 0
+
+.eo_polaroid
+	@include box-sizing(border-box)
+	@include border-radius(3px)	
+	@include single-box-shadow(#888888, 0, 0, 10px)
+	display: inline-block
+	border-color: #ffffff
+	border-style: solid
+	border-width: 0.25em
+	box-sizing: border-box
+	*border-width: 0.25em	//IE7
+	*border-style: solid	//IE7
+	*border-color: #ffffff	//IE7
