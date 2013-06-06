@@ -1,0 +1,661 @@
+@import "compass/css3"
+
+
+
+$baseCcolor: #4d4d4d
+$mainColor: #6B64A6
+$subColor: #06a
+$strongColor: #FF6600
+$clauseColor: #503d11
+
+//Basic
+body
+	font-family: "Arial", "MS Gothic"
+	color: $baseCcolor
+	font-weight: normal
+	font-style: normal
+	line-height: 1.6
+	a
+		cursor: pointer
+		&:link
+			color: $subColor
+			text-decoration: none
+		&:visited
+			color: $subColor
+			text-decoration: none
+		&:hover
+			color: $mainColor
+			text-decoration: none
+		&:active
+			color: $subColor
+			text-decoration: underline
+
+input, button, select, option, textarea
+	font-family: "Arial", "MS Gothic"
+	color: $baseCcolor
+	font-weight: normal
+	font-style: normal
+
+//Width
+@for $i from 1 through 21
+	.width_#{$i*5}
+		width: $i * 5%
+	.height_#{$i*5}
+		height: $i * 5%
+
+//Padding
+@for $i from 1 through 6
+	.padding_#{$i*5}
+		padding-left: #{$i*5}px
+		padding-bottom: #{$i*5}px
+		padding-top: #{$i*5}px
+		padding-right: #{$i*5}px
+	.paddingLeft_#{$i*5}
+		padding-left: #{$i*5}px
+	.paddingRight_#{$i*5}
+		padding-right: #{$i*5}px
+	.paddingBottom_#{$i*5}
+		padding-bottom: #{$i*5}px
+	.paddingTop_#{$i*5}
+		padding-top: #{$i*5}px
+
+//Margin
+@for $i from 1 through 6
+	.margin#{$i*5}
+		margin-left: #{$i*5}px
+		margin-bottom: #{$i*5}px
+		margin-top: #{$i*5}px
+		margin-right: #{$i*5}px
+	.marginLeft_#{$i*5}
+		margin-left: #{$i*5}px
+	.marginRight_#{$i*5}
+		margin-right: #{$i*5}px
+	.marginBottom_#{$i*5}
+		margin-bottom: #{$i*5}px
+	.marginTop_#{$i*5}
+		margin-top: #{$i*5}px
+
+//Float
+.floatLeft
+	float: left
+.floatRight
+	float: right
+
+//Shadow
+.shadowMin
+	@include box-shadow(#888888 0px 0px 5px)
+.shadowMid
+	@include box-shadow(#555555 0px 0px 10px)	
+.shadowMax
+	@include box-shadow(#333333 0px 0px 15px)
+
+//Radius
+.radiusMin
+	@include border-radius(3px)
+.radiusMid
+	@include border-radius(6px)
+.radiusMax
+	@include border-radius(9px)
+
+//Clear
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video		
+	.clearFix
+		&:before, &:after
+			display: table
+			line-height: 0
+			content: ""
+		&:after
+			clear: both
+	&.clearText
+		text-indent: -9999px
+		white-space: nowrap
+		line-height: 0
+		font-size: 0
+	&.clearBorder
+		border-top-width: 0
+		border-left-width: 0
+		border-bottom-width: 0
+		border-right-width: 0
+	&.clearWidth
+		width: auto
+	&.clearPadding
+		padding: 0
+	&.clearMargin
+		padding: 0	
+	&.textSmall
+		font-size: 82.5%
+	&.textLarge
+		font-size: 115%
+	&.textRight
+		text-align: right
+	&.textCenter
+		text-align: center
+		vertical-align: middle
+	&.textLeft
+		text-align: left
+
+.textStrong, strong
+	color: $strongColor
+	font-weight: normal
+	font-style: normal
+.textClause, cite
+	color: $clauseColor
+	font-weight: normal
+	font-style: normal
+		
+//Btn
+.btn, .btnStrong, .btnClause
+	line-height: 1.6
+	letter-spacing: 2px
+	font-size: 82.5%
+	cursor: pointer
+	display: inline-block
+	min-width: 50px
+	min-height: 13px
+	text-align: center
+	@include single-transition(all, 0.5s, ease, 0)	
+	@include border-radius(5px)
+	&:hover, &:focus
+.btn
+	color: #fff
+	background-color: $subColor
+	border-color: $subColor
+	border-top-color: lighten($subColor, 50%)	
+	border-top-style: solid
+	border-top-width: 1px
+	@include single-text-shadow(0px, 0px, 1px, 1px, darken($subColor, 5%))
+	@include background-image(linear-gradient(top, $subColor 90%, darken($subColor, 10%) 95%, $subColor))
+	&:hover, &:focus
+		color: #fff
+		background-color: $subColor
+		@include background-image(linear-gradient(bottom, $subColor 90%, darken($subColor, 10%) 95%, $subColor))
+.btnStrong
+	color: #fff
+	background-color: $strongColor
+	border-color: $strongColor
+	border-top-style: solid
+	border-top-width: 1px
+	border-top-color: lighten($strongColor, 50%)
+	@include single-text-shadow(0px, 0px, 1px, 1px, darken($strongColor, 5%))
+	@include background-image(linear-gradient(top, $strongColor 90%, darken($strongColor, 10%) 95%, $strongColor))
+	&:hover, &:focus
+		color: #fff
+		background-color: $strongColor
+		@include background-image(linear-gradient(bottom, $strongColor 90%, darken($strongColor, 10%) 95%, $strongColor))
+.btnClause
+	color: #fff
+	background-color: $clauseColor
+	border-color: $clauseColor
+	border-top-style: solid
+	border-top-width: 1px
+	border-top-color: lighten($clauseColor, 50%)
+	@include single-text-shadow(0px, 0px, 1px, 1px, darken($clauseColor, 5%))
+	@include background-image(linear-gradient(top, $clauseColor 90%, darken($clauseColor, 10%) 95%, $clauseColor))
+	&:hover, &:focus
+		color: #fff
+		background-color: $clauseColor
+		@include background-image(linear-gradient(bottom, $clauseColor 90%, darken($clauseColor, 10%) 95%, $clauseColor))
+
+//Header
+.header_sub1
+	color: $baseCcolor
+	line-height: 1.6
+	border-top-color: #dcdcdc
+	border-top-style: solid	
+	border-top-width: 5px
+	border-bottom-color: #898989
+	border-bottom-style: solid
+	border-bottom-width: 1px
+
+.header_sub2
+	color: $baseCcolor
+	line-height: 1.6
+	border-left-color: #D5D4D9
+	border-left-style: solid	
+	border-left-width: 5px
+	padding-left: 5px
+
+.header_sub3
+	color: $baseCcolor
+	line-height: 1.6
+	border-left-color: $mainColor
+	border-left-style: solid	
+	border-left-width: 5px
+	padding-left: 5px
+
+.header_sub4
+	color: $baseCcolor
+	line-height: 1.6
+	border-bottom-color: #C8C8C8
+	border-bottom-style: dotted	
+	border-bottom-width: 1px
+
+.header_sub5
+	color: $mainColor
+	line-height: 1.6
+	border-color: #C8C8C8
+	border-style: solid	
+	border-width: 1px
+	border-left-color: $mainColor
+	border-left-style: solid	
+	border-left-width: 5px
+	padding-left: 5px
+
+
+.header_main1
+	color: #ffffff
+	line-height: 1.6
+	padding-left: 5px
+	background-color: $mainColor
+	@include background-image(linear-gradient(top, $mainColor, darken($mainColor, 30%)))
+.header_main2
+	color: #ffffff
+	line-height: 1.6
+	padding-left: 5px
+	background-color: $mainColor
+	@include background-image(linear-gradient(top, $mainColor, darken($mainColor, 30%)))
+.header_main3
+	color: #ffffff
+	line-height: 1.6
+	padding-left: 5px
+	background-color: darken($mainColor, 20%)
+	@include background-image(linear-gradient(top, $mainColor, darken($mainColor, 20%), $mainColor))
+	@include border-radius(5px)
+.header_main4
+	color: #ffffff
+	line-height: 1.6
+	padding-left: 5px
+	background-color: darken($mainColor, 20%)
+	@include background-image(linear-gradient(top, darken($mainColor, 20%), $mainColor))
+	@include border-radius(15px)
+.header_main5
+	color: #ffffff
+	line-height: 1.6
+	padding-left: 5px
+	background-color: darken($mainColor, 20%)
+	@include background-image(linear-gradient(top, darken($mainColor, 20%) 40%, #ffffff))
+
+//Table
+.table_main1
+	border-collapse: collapse
+	color: #666
+	background-color: #ffffff
+	tr
+	td, th
+		padding: 5px
+		border-color: #e2e2e2
+		border-style: solid
+		border-width: 1px
+	tbody th, th
+		color: #ffffff
+		background-color: $mainColor	
+		background-image: none
+		border-bottom-color: darken($mainColor, 10%)
+	thead th, thead td
+		color: #ffffff
+		border-color: darken($mainColor, 10%)
+		background-color: $mainColor
+		@include background-image(linear-gradient(top, $mainColor, darken($mainColor, 30%)))
+	td:first-child, th:first-child
+		border-left-width: 0
+.table_main2
+	border-collapse: collapse
+	background-color: #ffffff	
+	tr
+		border-bottom-color: #e2e2e2
+		border-bottom-style: solid	
+		border-bottom-width: 1px
+	td, th
+		padding: 5px
+	tbody th, th
+		color: #ffffff
+		background-color: $mainColor	
+		background-image: none
+		border-bottom-color: darken($mainColor, 10%)
+	thead th, thead td
+		color: #ffffff
+		background-color: $mainColor
+		@include background-image(linear-gradient(top, $mainColor, darken($mainColor, 30%)))
+	td:first-child, th:first-child	
+
+.table_main3
+	border-collapse: collapse
+	background-color: #ffffff
+	border-color: $mainColor
+	border-style: solid
+	border-width: 3px
+	tr
+	td, th
+		padding: 5px
+		border-right-color: $mainColor
+		border-right-style: solid	
+		border-right-width: 1px
+	tbody th, th
+		color: #ffffff
+		background-color: $mainColor	
+		background-image: none
+		border-bottom-color: darken($mainColor, 10%)	
+	th, thead td
+		color: #ffffff
+		background-color: $mainColor
+		@include background-image(linear-gradient(top, $mainColor, darken($mainColor, 30%)))
+	td:first-child, th:first-child
+.table_main4
+	border-collapse: collapse
+	background-color: #ffffff	
+	tr
+		border-bottom-color: $mainColor
+		border-bottom-style: solid	
+		border-bottom-width: 1px
+	td, th
+		padding: 5px
+	tbody th, th
+		color: #ffffff
+		background-color: $mainColor	
+		background-image: none
+		border-bottom-color: darken($mainColor, 10%)
+	th, thead td
+		color: #ffffff
+		background-color: $mainColor
+		@include background-image(linear-gradient(top, $mainColor, darken($mainColor, 30%)))
+	td:first-child, th:first-child	
+.table_main5
+	border-collapse: collapse
+	color: #666
+	border-color: darken($mainColor, 10%)
+	border-style: solid	
+	border-width: 1px
+	background-color: #ffffff
+	tr
+	td, th
+		padding: 5px
+		border-color: $mainColor
+		border-style: solid
+		border-width: 1px
+	tbody th, th
+		color: #ffffff
+		background-color: $mainColor	
+		background-image: none
+		border-bottom-color: darken($mainColor, 10%)
+	thead th, thead td
+		color: #ffffff
+		border-color: darken($mainColor, 10%)
+		background-color: $mainColor
+		@include background-image(linear-gradient(top, $mainColor, darken($mainColor, 30%)))
+	td:first-child, th:first-child
+
+.table_sub1
+	border-collapse: collapse
+	color: #666
+	border-color: darken($mainColor, 10%)
+	border-style: solid	
+	border-width: 1px
+	background-color: #ffffff
+	tr
+	td, th
+		padding: 5px
+		border-color: #e2e2e2
+		border-style: solid
+		border-width: 1px
+	tbody th, th
+		color: $mainColor
+		border-color: darken($mainColor, 10%)
+		background-color: #ffffff
+	thead th, thead td
+		color: $mainColor
+		border-color: darken($mainColor, 10%)
+		background-color: #ffffff
+	td:first-child, th:first-child
+.table_sub2
+	border-collapse: collapse
+	background-color: #ffffff	
+	tr
+		border-bottom-color: #e2e2e2
+		border-bottom-style: solid	
+		border-bottom-width: 1px
+	td, th
+		padding: 5px
+	tbody th, th
+		color: #ffffff
+		background-color: $mainColor	
+		background-image: none
+		border-bottom-color: darken($mainColor, 10%)
+	thead th, thead td
+		color: $mainColor
+		border-color: darken($mainColor, 10%)
+		background-color: #ffffff
+		border-bottom-color: darken($mainColor, 10%)
+		border-bottom-style: solid	
+		border-bottom-width: 2px
+	td:first-child, th:first-child	
+
+.table_sub3
+	border-collapse: collapse
+	background-color: #ffffff
+	border-color: $mainColor
+	border-style: solid
+	border-width: 2px
+	tr
+	td, th
+		padding: 5px
+		border-right-color: $mainColor
+		border-right-style: solid	
+		border-right-width: 1px
+	tbody th, th
+		color: $mainColor
+		border-color: darken($mainColor, 10%)
+		background-color: #ffffff
+	th, thead td
+		color: $mainColor
+		border-color: darken($mainColor, 10%)
+		background-color: #ffffff
+	td:first-child, th:first-child
+.table_sub4
+	border-collapse: collapse
+	background-color: #ffffff	
+	tr
+		border-bottom-color: $mainColor
+		border-bottom-style: solid	
+		border-bottom-width: 1px
+	td, th
+		padding: 5px
+	tbody th, th
+		color: $mainColor
+		border-color: darken($mainColor, 10%)
+		background-color: #ffffff
+	th, thead td
+		color: $mainColor
+		border-color: darken($mainColor, 10%)
+		background-color: #ffffff
+	td:first-child, th:first-child	
+.table_sub5
+	border-collapse: collapse
+	background-color: #ffffff
+	border-top-color: $mainColor
+	border-top-style: solid	
+	border-top-width: 3px	
+	tr
+		border-bottom-color: $mainColor
+		border-bottom-style: solid	
+		border-bottom-width: 1px
+	td, th
+		padding: 5px
+	tbody th, th
+		color: $mainColor
+		border-color: darken($mainColor, 10%)
+		background-color: #ffffff
+	th, thead td
+		color: $mainColor
+		border-color: darken($mainColor, 10%)
+		background-color: #ffffff
+	td:first-child, th:first-child	
+
+
+
+
+
+
+
+
+.list_sub1
+	color: #696969
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		padding-top: 5px
+		padding-left: 5px
+		padding-bottom: 5px
+		line-height: 1.6
+		border-bottom-color: #C8C8C8
+		border-bottom-style: dotted	
+		border-bottom-width: 1px	
+
+.list_sub2
+	color: #696969
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		padding-top: 5px
+		padding-left: 5px
+		padding-bottom: 5px
+		line-height: 1.6
+		border-bottom-color: #C8C8C8
+		border-bottom-style: solid
+		border-bottom-width: 1px	
+
+.list_sub3
+	color: #696969
+	list-style-type: none
+	margin: 0
+	padding: 0
+	border-color: $mainColor
+	border-style: solid	
+	border-width: 1px	
+	li
+		padding-top: 5px
+		padding-left: 5px
+		padding-bottom: 5px
+		line-height: 1.6
+		border-bottom-color: #C8C8C8
+		border-bottom-style: dotted	
+		border-bottom-width: 1px		
+
+.list_sub4
+	color: #696969
+	list-style-type: none
+	margin: 0
+	padding: 0
+	border-color: $mainColor
+	border-style: solid	
+	border-width: 1px	
+	li
+		padding-top: 5px
+		padding-left: 5px
+		padding-bottom: 5px
+		line-height: 1.6
+		border-bottom-color: #C8C8C8
+		border-bottom-style: dotted	
+		border-bottom-width: 1px		
+
+.list_sub5
+	color: #696969
+	list-style-type: none
+	margin: 0
+	padding: 0
+	border-color: $mainColor
+	border-style: solid	
+	border-width: 1px	
+	li
+		padding-top: 5px
+		padding-left: 5px
+		padding-bottom: 5px
+		line-height: 1.6	
+
+
+.list_main1
+	list-style-type: none
+	margin: 0
+	padding: 0
+	color: #ffffff
+	background-color: $mainColor
+	@include border-radius(5px)
+	li
+		padding-top: 5px
+		padding-left: 5px
+		padding-bottom: 5px
+		line-height: 1.6
+		border-top-color: #ffffff
+		border-top-style: solid
+		border-top-width: 1px
+	li:first-child	
+		border-top-width: 0		
+
+.list_main2
+	list-style-type: none
+	margin: 0
+	padding: 0
+	color: #ffffff
+	background-color: $mainColor
+	@include border-radius(10px)
+	li
+		padding-top: 5px
+		padding-left: 5px
+		padding-bottom: 5px
+		line-height: 1.6
+		border-top-color: #ffffff
+		border-top-style: solid
+		border-top-width: 1px				
+	li:first-child	
+		border-top-width: 0	
+.list_main3
+	list-style-type: none
+	margin: 0
+	padding: 0
+	color: #ffffff
+	background-color: $mainColor
+	@include border-radius(5px)
+	li
+		padding-top: 5px
+		padding-left: 5px
+		padding-bottom: 5px
+		line-height: 1.6				
+
+.list_main4
+	list-style-type: none
+	margin: 0
+	padding: 0
+	color: #ffffff
+	background-color: $mainColor
+	border-color: darken($mainColor, 10%)
+	border-style: solid
+	border-width: 2px
+	@include border-radius(5px)
+	li
+		padding-top: 5px
+		padding-left: 5px
+		padding-bottom: 5px
+		line-height: 1.6
+		border-top-color: darken($mainColor, 10%)
+		border-top-style: solid
+		border-top-width: 1px
+	li:first-child	
+		border-top-width: 0
+
+.list_main5
+	list-style-type: none
+	margin: 0
+	padding: 0
+	color: #ffffff
+	background-color: $mainColor
+	border-color: darken($mainColor, 10%)
+	border-style: solid
+	border-width: 2px
+	@include border-radius(5px)
+	li
+		padding-top: 5px
+		padding-left: 5px
+		padding-bottom: 5px
+		line-height: 1.6
+	li:first-child		

@@ -1,0 +1,1277 @@
+body {
+  font-family: "Arial", "MS Gothic";
+  color: #4d4d4d;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+}
+body a {
+  cursor: pointer;
+}
+body a:link {
+  color: #0066aa;
+  text-decoration: none;
+}
+body a:visited {
+  color: #0066aa;
+  text-decoration: none;
+}
+body a:hover {
+  color: #6b64a6;
+  text-decoration: none;
+}
+body a:active {
+  color: #0066aa;
+  text-decoration: underline;
+}
+
+input, button, select, option, textarea {
+  font-family: "Arial", "MS Gothic";
+  color: #4d4d4d;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.width_5 {
+  width: 5%;
+}
+
+.height_5 {
+  height: 5%;
+}
+
+.width_10 {
+  width: 10%;
+}
+
+.height_10 {
+  height: 10%;
+}
+
+.width_15 {
+  width: 15%;
+}
+
+.height_15 {
+  height: 15%;
+}
+
+.width_20 {
+  width: 20%;
+}
+
+.height_20 {
+  height: 20%;
+}
+
+.width_25 {
+  width: 25%;
+}
+
+.height_25 {
+  height: 25%;
+}
+
+.width_30 {
+  width: 30%;
+}
+
+.height_30 {
+  height: 30%;
+}
+
+.width_35 {
+  width: 35%;
+}
+
+.height_35 {
+  height: 35%;
+}
+
+.width_40 {
+  width: 40%;
+}
+
+.height_40 {
+  height: 40%;
+}
+
+.width_45 {
+  width: 45%;
+}
+
+.height_45 {
+  height: 45%;
+}
+
+.width_50 {
+  width: 50%;
+}
+
+.height_50 {
+  height: 50%;
+}
+
+.width_55 {
+  width: 55%;
+}
+
+.height_55 {
+  height: 55%;
+}
+
+.width_60 {
+  width: 60%;
+}
+
+.height_60 {
+  height: 60%;
+}
+
+.width_65 {
+  width: 65%;
+}
+
+.height_65 {
+  height: 65%;
+}
+
+.width_70 {
+  width: 70%;
+}
+
+.height_70 {
+  height: 70%;
+}
+
+.width_75 {
+  width: 75%;
+}
+
+.height_75 {
+  height: 75%;
+}
+
+.width_80 {
+  width: 80%;
+}
+
+.height_80 {
+  height: 80%;
+}
+
+.width_85 {
+  width: 85%;
+}
+
+.height_85 {
+  height: 85%;
+}
+
+.width_90 {
+  width: 90%;
+}
+
+.height_90 {
+  height: 90%;
+}
+
+.width_95 {
+  width: 95%;
+}
+
+.height_95 {
+  height: 95%;
+}
+
+.width_100 {
+  width: 100%;
+}
+
+.height_100 {
+  height: 100%;
+}
+
+.width_105 {
+  width: 105%;
+}
+
+.height_105 {
+  height: 105%;
+}
+
+.padding_5 {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.paddingLeft_5 {
+  padding-left: 5px;
+}
+
+.paddingRight_5 {
+  padding-right: 5px;
+}
+
+.paddingBottom_5 {
+  padding-bottom: 5px;
+}
+
+.paddingTop_5 {
+  padding-top: 5px;
+}
+
+.padding_10 {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.paddingLeft_10 {
+  padding-left: 10px;
+}
+
+.paddingRight_10 {
+  padding-right: 10px;
+}
+
+.paddingBottom_10 {
+  padding-bottom: 10px;
+}
+
+.paddingTop_10 {
+  padding-top: 10px;
+}
+
+.padding_15 {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.paddingLeft_15 {
+  padding-left: 15px;
+}
+
+.paddingRight_15 {
+  padding-right: 15px;
+}
+
+.paddingBottom_15 {
+  padding-bottom: 15px;
+}
+
+.paddingTop_15 {
+  padding-top: 15px;
+}
+
+.padding_20 {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.paddingLeft_20 {
+  padding-left: 20px;
+}
+
+.paddingRight_20 {
+  padding-right: 20px;
+}
+
+.paddingBottom_20 {
+  padding-bottom: 20px;
+}
+
+.paddingTop_20 {
+  padding-top: 20px;
+}
+
+.padding_25 {
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+}
+
+.paddingLeft_25 {
+  padding-left: 25px;
+}
+
+.paddingRight_25 {
+  padding-right: 25px;
+}
+
+.paddingBottom_25 {
+  padding-bottom: 25px;
+}
+
+.paddingTop_25 {
+  padding-top: 25px;
+}
+
+.padding_30 {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.paddingLeft_30 {
+  padding-left: 30px;
+}
+
+.paddingRight_30 {
+  padding-right: 30px;
+}
+
+.paddingBottom_30 {
+  padding-bottom: 30px;
+}
+
+.paddingTop_30 {
+  padding-top: 30px;
+}
+
+.margin5 {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.marginLeft_5 {
+  margin-left: 5px;
+}
+
+.marginRight_5 {
+  margin-right: 5px;
+}
+
+.marginBottom_5 {
+  margin-bottom: 5px;
+}
+
+.marginTop_5 {
+  margin-top: 5px;
+}
+
+.margin10 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.marginLeft_10 {
+  margin-left: 10px;
+}
+
+.marginRight_10 {
+  margin-right: 10px;
+}
+
+.marginBottom_10 {
+  margin-bottom: 10px;
+}
+
+.marginTop_10 {
+  margin-top: 10px;
+}
+
+.margin15 {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.marginLeft_15 {
+  margin-left: 15px;
+}
+
+.marginRight_15 {
+  margin-right: 15px;
+}
+
+.marginBottom_15 {
+  margin-bottom: 15px;
+}
+
+.marginTop_15 {
+  margin-top: 15px;
+}
+
+.margin20 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.marginLeft_20 {
+  margin-left: 20px;
+}
+
+.marginRight_20 {
+  margin-right: 20px;
+}
+
+.marginBottom_20 {
+  margin-bottom: 20px;
+}
+
+.marginTop_20 {
+  margin-top: 20px;
+}
+
+.margin25 {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+.marginLeft_25 {
+  margin-left: 25px;
+}
+
+.marginRight_25 {
+  margin-right: 25px;
+}
+
+.marginBottom_25 {
+  margin-bottom: 25px;
+}
+
+.marginTop_25 {
+  margin-top: 25px;
+}
+
+.margin30 {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.marginLeft_30 {
+  margin-left: 30px;
+}
+
+.marginRight_30 {
+  margin-right: 30px;
+}
+
+.marginBottom_30 {
+  margin-bottom: 30px;
+}
+
+.marginTop_30 {
+  margin-top: 30px;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.shadowMin {
+  -webkit-box-shadow: #888888 0px 0px 5px;
+  -moz-box-shadow: #888888 0px 0px 5px;
+  box-shadow: #888888 0px 0px 5px;
+}
+
+.shadowMid {
+  -webkit-box-shadow: #555555 0px 0px 10px;
+  -moz-box-shadow: #555555 0px 0px 10px;
+  box-shadow: #555555 0px 0px 10px;
+}
+
+.shadowMax {
+  -webkit-box-shadow: #333333 0px 0px 15px;
+  -moz-box-shadow: #333333 0px 0px 15px;
+  box-shadow: #333333 0px 0px 15px;
+}
+
+.radiusMin {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.radiusMid {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.radiusMax {
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  border-radius: 9px;
+}
+
+html .clearFix:before, html .clearFix:after, body .clearFix:before, body .clearFix:after, div .clearFix:before, div .clearFix:after, span .clearFix:before, span .clearFix:after, applet .clearFix:before, applet .clearFix:after, object .clearFix:before, object .clearFix:after, iframe .clearFix:before, iframe .clearFix:after, h1 .clearFix:before, h1 .clearFix:after, h2 .clearFix:before, h2 .clearFix:after, h3 .clearFix:before, h3 .clearFix:after, h4 .clearFix:before, h4 .clearFix:after, h5 .clearFix:before, h5 .clearFix:after, h6 .clearFix:before, h6 .clearFix:after, p .clearFix:before, p .clearFix:after, blockquote .clearFix:before, blockquote .clearFix:after, pre .clearFix:before, pre .clearFix:after, a .clearFix:before, a .clearFix:after, abbr .clearFix:before, abbr .clearFix:after, acronym .clearFix:before, acronym .clearFix:after, address .clearFix:before, address .clearFix:after, big .clearFix:before, big .clearFix:after, cite .clearFix:before, cite .clearFix:after, code .clearFix:before, code .clearFix:after, del .clearFix:before, del .clearFix:after, dfn .clearFix:before, dfn .clearFix:after, em .clearFix:before, em .clearFix:after, img .clearFix:before, img .clearFix:after, ins .clearFix:before, ins .clearFix:after, kbd .clearFix:before, kbd .clearFix:after, q .clearFix:before, q .clearFix:after, s .clearFix:before, s .clearFix:after, samp .clearFix:before, samp .clearFix:after, small .clearFix:before, small .clearFix:after, strike .clearFix:before, strike .clearFix:after, strong .clearFix:before, strong .clearFix:after, sub .clearFix:before, sub .clearFix:after, sup .clearFix:before, sup .clearFix:after, tt .clearFix:before, tt .clearFix:after, var .clearFix:before, var .clearFix:after, b .clearFix:before, b .clearFix:after, u .clearFix:before, u .clearFix:after, i .clearFix:before, i .clearFix:after, center .clearFix:before, center .clearFix:after, dl .clearFix:before, dl .clearFix:after, dt .clearFix:before, dt .clearFix:after, dd .clearFix:before, dd .clearFix:after, ol .clearFix:before, ol .clearFix:after, ul .clearFix:before, ul .clearFix:after, li .clearFix:before, li .clearFix:after, fieldset .clearFix:before, fieldset .clearFix:after, form .clearFix:before, form .clearFix:after, label .clearFix:before, label .clearFix:after, legend .clearFix:before, legend .clearFix:after, table .clearFix:before, table .clearFix:after, caption .clearFix:before, caption .clearFix:after, tbody .clearFix:before, tbody .clearFix:after, tfoot .clearFix:before, tfoot .clearFix:after, thead .clearFix:before, thead .clearFix:after, tr .clearFix:before, tr .clearFix:after, th .clearFix:before, th .clearFix:after, td .clearFix:before, td .clearFix:after, article .clearFix:before, article .clearFix:after, aside .clearFix:before, aside .clearFix:after, canvas .clearFix:before, canvas .clearFix:after, details .clearFix:before, details .clearFix:after, embed .clearFix:before, embed .clearFix:after, figure .clearFix:before, figure .clearFix:after, figcaption .clearFix:before, figcaption .clearFix:after, footer .clearFix:before, footer .clearFix:after, header .clearFix:before, header .clearFix:after, hgroup .clearFix:before, hgroup .clearFix:after, menu .clearFix:before, menu .clearFix:after, nav .clearFix:before, nav .clearFix:after, output .clearFix:before, output .clearFix:after, ruby .clearFix:before, ruby .clearFix:after, section .clearFix:before, section .clearFix:after, summary .clearFix:before, summary .clearFix:after, time .clearFix:before, time .clearFix:after, mark .clearFix:before, mark .clearFix:after, audio .clearFix:before, audio .clearFix:after, video .clearFix:before, video .clearFix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+html .clearFix:after, body .clearFix:after, div .clearFix:after, span .clearFix:after, applet .clearFix:after, object .clearFix:after, iframe .clearFix:after, h1 .clearFix:after, h2 .clearFix:after, h3 .clearFix:after, h4 .clearFix:after, h5 .clearFix:after, h6 .clearFix:after, p .clearFix:after, blockquote .clearFix:after, pre .clearFix:after, a .clearFix:after, abbr .clearFix:after, acronym .clearFix:after, address .clearFix:after, big .clearFix:after, cite .clearFix:after, code .clearFix:after, del .clearFix:after, dfn .clearFix:after, em .clearFix:after, img .clearFix:after, ins .clearFix:after, kbd .clearFix:after, q .clearFix:after, s .clearFix:after, samp .clearFix:after, small .clearFix:after, strike .clearFix:after, strong .clearFix:after, sub .clearFix:after, sup .clearFix:after, tt .clearFix:after, var .clearFix:after, b .clearFix:after, u .clearFix:after, i .clearFix:after, center .clearFix:after, dl .clearFix:after, dt .clearFix:after, dd .clearFix:after, ol .clearFix:after, ul .clearFix:after, li .clearFix:after, fieldset .clearFix:after, form .clearFix:after, label .clearFix:after, legend .clearFix:after, table .clearFix:after, caption .clearFix:after, tbody .clearFix:after, tfoot .clearFix:after, thead .clearFix:after, tr .clearFix:after, th .clearFix:after, td .clearFix:after, article .clearFix:after, aside .clearFix:after, canvas .clearFix:after, details .clearFix:after, embed .clearFix:after, figure .clearFix:after, figcaption .clearFix:after, footer .clearFix:after, header .clearFix:after, hgroup .clearFix:after, menu .clearFix:after, nav .clearFix:after, output .clearFix:after, ruby .clearFix:after, section .clearFix:after, summary .clearFix:after, time .clearFix:after, mark .clearFix:after, audio .clearFix:after, video .clearFix:after {
+  clear: both;
+}
+html.clearText, body.clearText, div.clearText, span.clearText, applet.clearText, object.clearText, iframe.clearText, h1.clearText, h2.clearText, h3.clearText, h4.clearText, h5.clearText, h6.clearText, p.clearText, blockquote.clearText, pre.clearText, a.clearText, abbr.clearText, acronym.clearText, address.clearText, big.clearText, cite.clearText, code.clearText, del.clearText, dfn.clearText, em.clearText, img.clearText, ins.clearText, kbd.clearText, q.clearText, s.clearText, samp.clearText, small.clearText, strike.clearText, strong.clearText, sub.clearText, sup.clearText, tt.clearText, var.clearText, b.clearText, u.clearText, i.clearText, center.clearText, dl.clearText, dt.clearText, dd.clearText, ol.clearText, ul.clearText, li.clearText, fieldset.clearText, form.clearText, label.clearText, legend.clearText, table.clearText, caption.clearText, tbody.clearText, tfoot.clearText, thead.clearText, tr.clearText, th.clearText, td.clearText, article.clearText, aside.clearText, canvas.clearText, details.clearText, embed.clearText, figure.clearText, figcaption.clearText, footer.clearText, header.clearText, hgroup.clearText, menu.clearText, nav.clearText, output.clearText, ruby.clearText, section.clearText, summary.clearText, time.clearText, mark.clearText, audio.clearText, video.clearText {
+  text-indent: -9999px;
+  white-space: nowrap;
+  line-height: 0;
+  font-size: 0;
+}
+html.clearBorder, body.clearBorder, div.clearBorder, span.clearBorder, applet.clearBorder, object.clearBorder, iframe.clearBorder, h1.clearBorder, h2.clearBorder, h3.clearBorder, h4.clearBorder, h5.clearBorder, h6.clearBorder, p.clearBorder, blockquote.clearBorder, pre.clearBorder, a.clearBorder, abbr.clearBorder, acronym.clearBorder, address.clearBorder, big.clearBorder, cite.clearBorder, code.clearBorder, del.clearBorder, dfn.clearBorder, em.clearBorder, img.clearBorder, ins.clearBorder, kbd.clearBorder, q.clearBorder, s.clearBorder, samp.clearBorder, small.clearBorder, strike.clearBorder, strong.clearBorder, sub.clearBorder, sup.clearBorder, tt.clearBorder, var.clearBorder, b.clearBorder, u.clearBorder, i.clearBorder, center.clearBorder, dl.clearBorder, dt.clearBorder, dd.clearBorder, ol.clearBorder, ul.clearBorder, li.clearBorder, fieldset.clearBorder, form.clearBorder, label.clearBorder, legend.clearBorder, table.clearBorder, caption.clearBorder, tbody.clearBorder, tfoot.clearBorder, thead.clearBorder, tr.clearBorder, th.clearBorder, td.clearBorder, article.clearBorder, aside.clearBorder, canvas.clearBorder, details.clearBorder, embed.clearBorder, figure.clearBorder, figcaption.clearBorder, footer.clearBorder, header.clearBorder, hgroup.clearBorder, menu.clearBorder, nav.clearBorder, output.clearBorder, ruby.clearBorder, section.clearBorder, summary.clearBorder, time.clearBorder, mark.clearBorder, audio.clearBorder, video.clearBorder {
+  border-top-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+html.clearWidth, body.clearWidth, div.clearWidth, span.clearWidth, applet.clearWidth, object.clearWidth, iframe.clearWidth, h1.clearWidth, h2.clearWidth, h3.clearWidth, h4.clearWidth, h5.clearWidth, h6.clearWidth, p.clearWidth, blockquote.clearWidth, pre.clearWidth, a.clearWidth, abbr.clearWidth, acronym.clearWidth, address.clearWidth, big.clearWidth, cite.clearWidth, code.clearWidth, del.clearWidth, dfn.clearWidth, em.clearWidth, img.clearWidth, ins.clearWidth, kbd.clearWidth, q.clearWidth, s.clearWidth, samp.clearWidth, small.clearWidth, strike.clearWidth, strong.clearWidth, sub.clearWidth, sup.clearWidth, tt.clearWidth, var.clearWidth, b.clearWidth, u.clearWidth, i.clearWidth, center.clearWidth, dl.clearWidth, dt.clearWidth, dd.clearWidth, ol.clearWidth, ul.clearWidth, li.clearWidth, fieldset.clearWidth, form.clearWidth, label.clearWidth, legend.clearWidth, table.clearWidth, caption.clearWidth, tbody.clearWidth, tfoot.clearWidth, thead.clearWidth, tr.clearWidth, th.clearWidth, td.clearWidth, article.clearWidth, aside.clearWidth, canvas.clearWidth, details.clearWidth, embed.clearWidth, figure.clearWidth, figcaption.clearWidth, footer.clearWidth, header.clearWidth, hgroup.clearWidth, menu.clearWidth, nav.clearWidth, output.clearWidth, ruby.clearWidth, section.clearWidth, summary.clearWidth, time.clearWidth, mark.clearWidth, audio.clearWidth, video.clearWidth {
+  width: auto;
+}
+html.clearPadding, body.clearPadding, div.clearPadding, span.clearPadding, applet.clearPadding, object.clearPadding, iframe.clearPadding, h1.clearPadding, h2.clearPadding, h3.clearPadding, h4.clearPadding, h5.clearPadding, h6.clearPadding, p.clearPadding, blockquote.clearPadding, pre.clearPadding, a.clearPadding, abbr.clearPadding, acronym.clearPadding, address.clearPadding, big.clearPadding, cite.clearPadding, code.clearPadding, del.clearPadding, dfn.clearPadding, em.clearPadding, img.clearPadding, ins.clearPadding, kbd.clearPadding, q.clearPadding, s.clearPadding, samp.clearPadding, small.clearPadding, strike.clearPadding, strong.clearPadding, sub.clearPadding, sup.clearPadding, tt.clearPadding, var.clearPadding, b.clearPadding, u.clearPadding, i.clearPadding, center.clearPadding, dl.clearPadding, dt.clearPadding, dd.clearPadding, ol.clearPadding, ul.clearPadding, li.clearPadding, fieldset.clearPadding, form.clearPadding, label.clearPadding, legend.clearPadding, table.clearPadding, caption.clearPadding, tbody.clearPadding, tfoot.clearPadding, thead.clearPadding, tr.clearPadding, th.clearPadding, td.clearPadding, article.clearPadding, aside.clearPadding, canvas.clearPadding, details.clearPadding, embed.clearPadding, figure.clearPadding, figcaption.clearPadding, footer.clearPadding, header.clearPadding, hgroup.clearPadding, menu.clearPadding, nav.clearPadding, output.clearPadding, ruby.clearPadding, section.clearPadding, summary.clearPadding, time.clearPadding, mark.clearPadding, audio.clearPadding, video.clearPadding {
+  padding: 0;
+}
+html.clearMargin, body.clearMargin, div.clearMargin, span.clearMargin, applet.clearMargin, object.clearMargin, iframe.clearMargin, h1.clearMargin, h2.clearMargin, h3.clearMargin, h4.clearMargin, h5.clearMargin, h6.clearMargin, p.clearMargin, blockquote.clearMargin, pre.clearMargin, a.clearMargin, abbr.clearMargin, acronym.clearMargin, address.clearMargin, big.clearMargin, cite.clearMargin, code.clearMargin, del.clearMargin, dfn.clearMargin, em.clearMargin, img.clearMargin, ins.clearMargin, kbd.clearMargin, q.clearMargin, s.clearMargin, samp.clearMargin, small.clearMargin, strike.clearMargin, strong.clearMargin, sub.clearMargin, sup.clearMargin, tt.clearMargin, var.clearMargin, b.clearMargin, u.clearMargin, i.clearMargin, center.clearMargin, dl.clearMargin, dt.clearMargin, dd.clearMargin, ol.clearMargin, ul.clearMargin, li.clearMargin, fieldset.clearMargin, form.clearMargin, label.clearMargin, legend.clearMargin, table.clearMargin, caption.clearMargin, tbody.clearMargin, tfoot.clearMargin, thead.clearMargin, tr.clearMargin, th.clearMargin, td.clearMargin, article.clearMargin, aside.clearMargin, canvas.clearMargin, details.clearMargin, embed.clearMargin, figure.clearMargin, figcaption.clearMargin, footer.clearMargin, header.clearMargin, hgroup.clearMargin, menu.clearMargin, nav.clearMargin, output.clearMargin, ruby.clearMargin, section.clearMargin, summary.clearMargin, time.clearMargin, mark.clearMargin, audio.clearMargin, video.clearMargin {
+  padding: 0;
+}
+html.textSmall, body.textSmall, div.textSmall, span.textSmall, applet.textSmall, object.textSmall, iframe.textSmall, h1.textSmall, h2.textSmall, h3.textSmall, h4.textSmall, h5.textSmall, h6.textSmall, p.textSmall, blockquote.textSmall, pre.textSmall, a.textSmall, abbr.textSmall, acronym.textSmall, address.textSmall, big.textSmall, cite.textSmall, code.textSmall, del.textSmall, dfn.textSmall, em.textSmall, img.textSmall, ins.textSmall, kbd.textSmall, q.textSmall, s.textSmall, samp.textSmall, small.textSmall, strike.textSmall, strong.textSmall, sub.textSmall, sup.textSmall, tt.textSmall, var.textSmall, b.textSmall, u.textSmall, i.textSmall, center.textSmall, dl.textSmall, dt.textSmall, dd.textSmall, ol.textSmall, ul.textSmall, li.textSmall, fieldset.textSmall, form.textSmall, label.textSmall, legend.textSmall, table.textSmall, caption.textSmall, tbody.textSmall, tfoot.textSmall, thead.textSmall, tr.textSmall, th.textSmall, td.textSmall, article.textSmall, aside.textSmall, canvas.textSmall, details.textSmall, embed.textSmall, figure.textSmall, figcaption.textSmall, footer.textSmall, header.textSmall, hgroup.textSmall, menu.textSmall, nav.textSmall, output.textSmall, ruby.textSmall, section.textSmall, summary.textSmall, time.textSmall, mark.textSmall, audio.textSmall, video.textSmall {
+  font-size: 82.5%;
+}
+html.textLarge, body.textLarge, div.textLarge, span.textLarge, applet.textLarge, object.textLarge, iframe.textLarge, h1.textLarge, h2.textLarge, h3.textLarge, h4.textLarge, h5.textLarge, h6.textLarge, p.textLarge, blockquote.textLarge, pre.textLarge, a.textLarge, abbr.textLarge, acronym.textLarge, address.textLarge, big.textLarge, cite.textLarge, code.textLarge, del.textLarge, dfn.textLarge, em.textLarge, img.textLarge, ins.textLarge, kbd.textLarge, q.textLarge, s.textLarge, samp.textLarge, small.textLarge, strike.textLarge, strong.textLarge, sub.textLarge, sup.textLarge, tt.textLarge, var.textLarge, b.textLarge, u.textLarge, i.textLarge, center.textLarge, dl.textLarge, dt.textLarge, dd.textLarge, ol.textLarge, ul.textLarge, li.textLarge, fieldset.textLarge, form.textLarge, label.textLarge, legend.textLarge, table.textLarge, caption.textLarge, tbody.textLarge, tfoot.textLarge, thead.textLarge, tr.textLarge, th.textLarge, td.textLarge, article.textLarge, aside.textLarge, canvas.textLarge, details.textLarge, embed.textLarge, figure.textLarge, figcaption.textLarge, footer.textLarge, header.textLarge, hgroup.textLarge, menu.textLarge, nav.textLarge, output.textLarge, ruby.textLarge, section.textLarge, summary.textLarge, time.textLarge, mark.textLarge, audio.textLarge, video.textLarge {
+  font-size: 115%;
+}
+html.textRight, body.textRight, div.textRight, span.textRight, applet.textRight, object.textRight, iframe.textRight, h1.textRight, h2.textRight, h3.textRight, h4.textRight, h5.textRight, h6.textRight, p.textRight, blockquote.textRight, pre.textRight, a.textRight, abbr.textRight, acronym.textRight, address.textRight, big.textRight, cite.textRight, code.textRight, del.textRight, dfn.textRight, em.textRight, img.textRight, ins.textRight, kbd.textRight, q.textRight, s.textRight, samp.textRight, small.textRight, strike.textRight, strong.textRight, sub.textRight, sup.textRight, tt.textRight, var.textRight, b.textRight, u.textRight, i.textRight, center.textRight, dl.textRight, dt.textRight, dd.textRight, ol.textRight, ul.textRight, li.textRight, fieldset.textRight, form.textRight, label.textRight, legend.textRight, table.textRight, caption.textRight, tbody.textRight, tfoot.textRight, thead.textRight, tr.textRight, th.textRight, td.textRight, article.textRight, aside.textRight, canvas.textRight, details.textRight, embed.textRight, figure.textRight, figcaption.textRight, footer.textRight, header.textRight, hgroup.textRight, menu.textRight, nav.textRight, output.textRight, ruby.textRight, section.textRight, summary.textRight, time.textRight, mark.textRight, audio.textRight, video.textRight {
+  text-align: right;
+}
+html.textCenter, body.textCenter, div.textCenter, span.textCenter, applet.textCenter, object.textCenter, iframe.textCenter, h1.textCenter, h2.textCenter, h3.textCenter, h4.textCenter, h5.textCenter, h6.textCenter, p.textCenter, blockquote.textCenter, pre.textCenter, a.textCenter, abbr.textCenter, acronym.textCenter, address.textCenter, big.textCenter, cite.textCenter, code.textCenter, del.textCenter, dfn.textCenter, em.textCenter, img.textCenter, ins.textCenter, kbd.textCenter, q.textCenter, s.textCenter, samp.textCenter, small.textCenter, strike.textCenter, strong.textCenter, sub.textCenter, sup.textCenter, tt.textCenter, var.textCenter, b.textCenter, u.textCenter, i.textCenter, center.textCenter, dl.textCenter, dt.textCenter, dd.textCenter, ol.textCenter, ul.textCenter, li.textCenter, fieldset.textCenter, form.textCenter, label.textCenter, legend.textCenter, table.textCenter, caption.textCenter, tbody.textCenter, tfoot.textCenter, thead.textCenter, tr.textCenter, th.textCenter, td.textCenter, article.textCenter, aside.textCenter, canvas.textCenter, details.textCenter, embed.textCenter, figure.textCenter, figcaption.textCenter, footer.textCenter, header.textCenter, hgroup.textCenter, menu.textCenter, nav.textCenter, output.textCenter, ruby.textCenter, section.textCenter, summary.textCenter, time.textCenter, mark.textCenter, audio.textCenter, video.textCenter {
+  text-align: center;
+  vertical-align: middle;
+}
+html.textLeft, body.textLeft, div.textLeft, span.textLeft, applet.textLeft, object.textLeft, iframe.textLeft, h1.textLeft, h2.textLeft, h3.textLeft, h4.textLeft, h5.textLeft, h6.textLeft, p.textLeft, blockquote.textLeft, pre.textLeft, a.textLeft, abbr.textLeft, acronym.textLeft, address.textLeft, big.textLeft, cite.textLeft, code.textLeft, del.textLeft, dfn.textLeft, em.textLeft, img.textLeft, ins.textLeft, kbd.textLeft, q.textLeft, s.textLeft, samp.textLeft, small.textLeft, strike.textLeft, strong.textLeft, sub.textLeft, sup.textLeft, tt.textLeft, var.textLeft, b.textLeft, u.textLeft, i.textLeft, center.textLeft, dl.textLeft, dt.textLeft, dd.textLeft, ol.textLeft, ul.textLeft, li.textLeft, fieldset.textLeft, form.textLeft, label.textLeft, legend.textLeft, table.textLeft, caption.textLeft, tbody.textLeft, tfoot.textLeft, thead.textLeft, tr.textLeft, th.textLeft, td.textLeft, article.textLeft, aside.textLeft, canvas.textLeft, details.textLeft, embed.textLeft, figure.textLeft, figcaption.textLeft, footer.textLeft, header.textLeft, hgroup.textLeft, menu.textLeft, nav.textLeft, output.textLeft, ruby.textLeft, section.textLeft, summary.textLeft, time.textLeft, mark.textLeft, audio.textLeft, video.textLeft {
+  text-align: left;
+}
+
+.textStrong, strong {
+  color: #ff6600;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.textClause, cite {
+  color: #503d11;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.btn, .btnStrong, .btnClause {
+  line-height: 1.6;
+  letter-spacing: 2px;
+  font-size: 82.5%;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 50px;
+  min-height: 13px;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -webkit-transition-delay: 0;
+  -moz-transition: all 0.5s ease 0;
+  -o-transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.btn {
+  color: white;
+  background-color: #0066aa;
+  border-color: #0066aa;
+  border-top-color: #aaddff;
+  border-top-style: solid;
+  border-top-width: 1px;
+  text-shadow: 0px 0px 1px #005790, 0px 0px 1px 1px #005790;
+  text-shadow: 0px 0px 1px 1px #005790, 0px 0px 1px 1px #005790;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(90%, #0066aa), color-stop(95%, #004777), color-stop(100%, #0066aa));
+  background-image: -webkit-linear-gradient(top, #0066aa 90%, #004777 95%, #0066aa);
+  background-image: -moz-linear-gradient(top, #0066aa 90%, #004777 95%, #0066aa);
+  background-image: -o-linear-gradient(top, #0066aa 90%, #004777 95%, #0066aa);
+  background-image: linear-gradient(top, #0066aa 90%, #004777 95%, #0066aa);
+}
+.btn:hover, .btn:focus {
+  color: white;
+  background-color: #0066aa;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(90%, #0066aa), color-stop(95%, #004777), color-stop(100%, #0066aa));
+  background-image: -webkit-linear-gradient(bottom, #0066aa 90%, #004777 95%, #0066aa);
+  background-image: -moz-linear-gradient(bottom, #0066aa 90%, #004777 95%, #0066aa);
+  background-image: -o-linear-gradient(bottom, #0066aa 90%, #004777 95%, #0066aa);
+  background-image: linear-gradient(bottom, #0066aa 90%, #004777 95%, #0066aa);
+}
+
+.btnStrong {
+  color: white;
+  background-color: #ff6600;
+  border-color: #ff6600;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: white;
+  text-shadow: 0px 0px 1px #e65c00, 0px 0px 1px 1px #e65c00;
+  text-shadow: 0px 0px 1px 1px #e65c00, 0px 0px 1px 1px #e65c00;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(90%, #ff6600), color-stop(95%, #cc5200), color-stop(100%, #ff6600));
+  background-image: -webkit-linear-gradient(top, #ff6600 90%, #cc5200 95%, #ff6600);
+  background-image: -moz-linear-gradient(top, #ff6600 90%, #cc5200 95%, #ff6600);
+  background-image: -o-linear-gradient(top, #ff6600 90%, #cc5200 95%, #ff6600);
+  background-image: linear-gradient(top, #ff6600 90%, #cc5200 95%, #ff6600);
+}
+.btnStrong:hover, .btnStrong:focus {
+  color: white;
+  background-color: #ff6600;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(90%, #ff6600), color-stop(95%, #cc5200), color-stop(100%, #ff6600));
+  background-image: -webkit-linear-gradient(bottom, #ff6600 90%, #cc5200 95%, #ff6600);
+  background-image: -moz-linear-gradient(bottom, #ff6600 90%, #cc5200 95%, #ff6600);
+  background-image: -o-linear-gradient(bottom, #ff6600 90%, #cc5200 95%, #ff6600);
+  background-image: linear-gradient(bottom, #ff6600 90%, #cc5200 95%, #ff6600);
+}
+
+.btnClause {
+  color: white;
+  background-color: #503d11;
+  border-color: #503d11;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #e3c47d;
+  text-shadow: 0px 0px 1px #3b2d0d, 0px 0px 1px 1px #3b2d0d;
+  text-shadow: 0px 0px 1px 1px #3b2d0d, 0px 0px 1px 1px #3b2d0d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(90%, #503d11), color-stop(95%, #261d08), color-stop(100%, #503d11));
+  background-image: -webkit-linear-gradient(top, #503d11 90%, #261d08 95%, #503d11);
+  background-image: -moz-linear-gradient(top, #503d11 90%, #261d08 95%, #503d11);
+  background-image: -o-linear-gradient(top, #503d11 90%, #261d08 95%, #503d11);
+  background-image: linear-gradient(top, #503d11 90%, #261d08 95%, #503d11);
+}
+.btnClause:hover, .btnClause:focus {
+  color: white;
+  background-color: #503d11;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(90%, #503d11), color-stop(95%, #261d08), color-stop(100%, #503d11));
+  background-image: -webkit-linear-gradient(bottom, #503d11 90%, #261d08 95%, #503d11);
+  background-image: -moz-linear-gradient(bottom, #503d11 90%, #261d08 95%, #503d11);
+  background-image: -o-linear-gradient(bottom, #503d11 90%, #261d08 95%, #503d11);
+  background-image: linear-gradient(bottom, #503d11 90%, #261d08 95%, #503d11);
+}
+
+.header_sub1 {
+  color: #4d4d4d;
+  line-height: 1.6;
+  border-top-color: gainsboro;
+  border-top-style: solid;
+  border-top-width: 5px;
+  border-bottom-color: #898989;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.header_sub2 {
+  color: #4d4d4d;
+  line-height: 1.6;
+  border-left-color: #d5d4d9;
+  border-left-style: solid;
+  border-left-width: 5px;
+  padding-left: 5px;
+}
+
+.header_sub3 {
+  color: #4d4d4d;
+  line-height: 1.6;
+  border-left-color: #6b64a6;
+  border-left-style: solid;
+  border-left-width: 5px;
+  padding-left: 5px;
+}
+
+.header_sub4 {
+  color: #4d4d4d;
+  line-height: 1.6;
+  border-bottom-color: #c8c8c8;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+}
+
+.header_sub5 {
+  color: #6b64a6;
+  line-height: 1.6;
+  border-color: #c8c8c8;
+  border-style: solid;
+  border-width: 1px;
+  border-left-color: #6b64a6;
+  border-left-style: solid;
+  border-left-width: 5px;
+  padding-left: 5px;
+}
+
+.header_main1 {
+  color: white;
+  line-height: 1.6;
+  padding-left: 5px;
+  background-color: #6b64a6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b64a6), color-stop(100%, #2c2948));
+  background-image: -webkit-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -moz-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -o-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: linear-gradient(top, #6b64a6, #2c2948);
+}
+
+.header_main2 {
+  color: white;
+  line-height: 1.6;
+  padding-left: 5px;
+  background-color: #6b64a6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b64a6), color-stop(100%, #2c2948));
+  background-image: -webkit-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -moz-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -o-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: linear-gradient(top, #6b64a6, #2c2948);
+}
+
+.header_main3 {
+  color: white;
+  line-height: 1.6;
+  padding-left: 5px;
+  background-color: #413c68;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b64a6), color-stop(50%, #413c68), color-stop(100%, #6b64a6));
+  background-image: -webkit-linear-gradient(top, #6b64a6, #413c68, #6b64a6);
+  background-image: -moz-linear-gradient(top, #6b64a6, #413c68, #6b64a6);
+  background-image: -o-linear-gradient(top, #6b64a6, #413c68, #6b64a6);
+  background-image: linear-gradient(top, #6b64a6, #413c68, #6b64a6);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.header_main4 {
+  color: white;
+  line-height: 1.6;
+  padding-left: 5px;
+  background-color: #413c68;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #413c68), color-stop(100%, #6b64a6));
+  background-image: -webkit-linear-gradient(top, #413c68, #6b64a6);
+  background-image: -moz-linear-gradient(top, #413c68, #6b64a6);
+  background-image: -o-linear-gradient(top, #413c68, #6b64a6);
+  background-image: linear-gradient(top, #413c68, #6b64a6);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.header_main5 {
+  color: white;
+  line-height: 1.6;
+  padding-left: 5px;
+  background-color: #413c68;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #413c68), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #413c68 40%, #ffffff);
+  background-image: -moz-linear-gradient(top, #413c68 40%, #ffffff);
+  background-image: -o-linear-gradient(top, #413c68 40%, #ffffff);
+  background-image: linear-gradient(top, #413c68 40%, #ffffff);
+}
+
+.table_main1 {
+  border-collapse: collapse;
+  color: #666666;
+  background-color: white;
+}
+.table_main1 td, .table_main1 th {
+  padding: 5px;
+  border-color: #e2e2e2;
+  border-style: solid;
+  border-width: 1px;
+}
+.table_main1 tbody th, .table_main1 th {
+  color: white;
+  background-color: #6b64a6;
+  background-image: none;
+  border-bottom-color: #554e89;
+}
+.table_main1 thead th, .table_main1 thead td {
+  color: white;
+  border-color: #554e89;
+  background-color: #6b64a6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b64a6), color-stop(100%, #2c2948));
+  background-image: -webkit-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -moz-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -o-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: linear-gradient(top, #6b64a6, #2c2948);
+}
+.table_main1 td:first-child, .table_main1 th:first-child {
+  border-left-width: 0;
+}
+
+.table_main2 {
+  border-collapse: collapse;
+  background-color: white;
+}
+.table_main2 tr {
+  border-bottom-color: #e2e2e2;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.table_main2 td, .table_main2 th {
+  padding: 5px;
+}
+.table_main2 tbody th, .table_main2 th {
+  color: white;
+  background-color: #6b64a6;
+  background-image: none;
+  border-bottom-color: #554e89;
+}
+.table_main2 thead th, .table_main2 thead td {
+  color: white;
+  background-color: #6b64a6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b64a6), color-stop(100%, #2c2948));
+  background-image: -webkit-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -moz-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -o-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: linear-gradient(top, #6b64a6, #2c2948);
+}
+
+.table_main3 {
+  border-collapse: collapse;
+  background-color: white;
+  border-color: #6b64a6;
+  border-style: solid;
+  border-width: 3px;
+}
+.table_main3 td, .table_main3 th {
+  padding: 5px;
+  border-right-color: #6b64a6;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+.table_main3 tbody th, .table_main3 th {
+  color: white;
+  background-color: #6b64a6;
+  background-image: none;
+  border-bottom-color: #554e89;
+}
+.table_main3 th, .table_main3 thead td {
+  color: white;
+  background-color: #6b64a6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b64a6), color-stop(100%, #2c2948));
+  background-image: -webkit-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -moz-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -o-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: linear-gradient(top, #6b64a6, #2c2948);
+}
+
+.table_main4 {
+  border-collapse: collapse;
+  background-color: white;
+}
+.table_main4 tr {
+  border-bottom-color: #6b64a6;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.table_main4 td, .table_main4 th {
+  padding: 5px;
+}
+.table_main4 tbody th, .table_main4 th {
+  color: white;
+  background-color: #6b64a6;
+  background-image: none;
+  border-bottom-color: #554e89;
+}
+.table_main4 th, .table_main4 thead td {
+  color: white;
+  background-color: #6b64a6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b64a6), color-stop(100%, #2c2948));
+  background-image: -webkit-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -moz-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -o-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: linear-gradient(top, #6b64a6, #2c2948);
+}
+
+.table_main5 {
+  border-collapse: collapse;
+  color: #666666;
+  border-color: #554e89;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+}
+.table_main5 td, .table_main5 th {
+  padding: 5px;
+  border-color: #6b64a6;
+  border-style: solid;
+  border-width: 1px;
+}
+.table_main5 tbody th, .table_main5 th {
+  color: white;
+  background-color: #6b64a6;
+  background-image: none;
+  border-bottom-color: #554e89;
+}
+.table_main5 thead th, .table_main5 thead td {
+  color: white;
+  border-color: #554e89;
+  background-color: #6b64a6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b64a6), color-stop(100%, #2c2948));
+  background-image: -webkit-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -moz-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: -o-linear-gradient(top, #6b64a6, #2c2948);
+  background-image: linear-gradient(top, #6b64a6, #2c2948);
+}
+
+.table_sub1 {
+  border-collapse: collapse;
+  color: #666666;
+  border-color: #554e89;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+}
+.table_sub1 td, .table_sub1 th {
+  padding: 5px;
+  border-color: #e2e2e2;
+  border-style: solid;
+  border-width: 1px;
+}
+.table_sub1 tbody th, .table_sub1 th {
+  color: #6b64a6;
+  border-color: #554e89;
+  background-color: white;
+}
+.table_sub1 thead th, .table_sub1 thead td {
+  color: #6b64a6;
+  border-color: #554e89;
+  background-color: white;
+}
+
+.table_sub2 {
+  border-collapse: collapse;
+  background-color: white;
+}
+.table_sub2 tr {
+  border-bottom-color: #e2e2e2;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.table_sub2 td, .table_sub2 th {
+  padding: 5px;
+}
+.table_sub2 tbody th, .table_sub2 th {
+  color: white;
+  background-color: #6b64a6;
+  background-image: none;
+  border-bottom-color: #554e89;
+}
+.table_sub2 thead th, .table_sub2 thead td {
+  color: #6b64a6;
+  border-color: #554e89;
+  background-color: white;
+  border-bottom-color: #554e89;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.table_sub3 {
+  border-collapse: collapse;
+  background-color: white;
+  border-color: #6b64a6;
+  border-style: solid;
+  border-width: 2px;
+}
+.table_sub3 td, .table_sub3 th {
+  padding: 5px;
+  border-right-color: #6b64a6;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+.table_sub3 tbody th, .table_sub3 th {
+  color: #6b64a6;
+  border-color: #554e89;
+  background-color: white;
+}
+.table_sub3 th, .table_sub3 thead td {
+  color: #6b64a6;
+  border-color: #554e89;
+  background-color: white;
+}
+
+.table_sub4 {
+  border-collapse: collapse;
+  background-color: white;
+}
+.table_sub4 tr {
+  border-bottom-color: #6b64a6;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.table_sub4 td, .table_sub4 th {
+  padding: 5px;
+}
+.table_sub4 tbody th, .table_sub4 th {
+  color: #6b64a6;
+  border-color: #554e89;
+  background-color: white;
+}
+.table_sub4 th, .table_sub4 thead td {
+  color: #6b64a6;
+  border-color: #554e89;
+  background-color: white;
+}
+
+.table_sub5 {
+  border-collapse: collapse;
+  background-color: white;
+  border-top-color: #6b64a6;
+  border-top-style: solid;
+  border-top-width: 3px;
+}
+.table_sub5 tr {
+  border-bottom-color: #6b64a6;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.table_sub5 td, .table_sub5 th {
+  padding: 5px;
+}
+.table_sub5 tbody th, .table_sub5 th {
+  color: #6b64a6;
+  border-color: #554e89;
+  background-color: white;
+}
+.table_sub5 th, .table_sub5 thead td {
+  color: #6b64a6;
+  border-color: #554e89;
+  background-color: white;
+}
+
+.list_sub1 {
+  color: dimgrey;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list_sub1 li {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 1.6;
+  border-bottom-color: #c8c8c8;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+}
+
+.list_sub2 {
+  color: dimgrey;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list_sub2 li {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 1.6;
+  border-bottom-color: #c8c8c8;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.list_sub3 {
+  color: dimgrey;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-color: #6b64a6;
+  border-style: solid;
+  border-width: 1px;
+}
+.list_sub3 li {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 1.6;
+  border-bottom-color: #c8c8c8;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+}
+
+.list_sub4 {
+  color: dimgrey;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-color: #6b64a6;
+  border-style: solid;
+  border-width: 1px;
+}
+.list_sub4 li {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 1.6;
+  border-bottom-color: #c8c8c8;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+}
+
+.list_sub5 {
+  color: dimgrey;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-color: #6b64a6;
+  border-style: solid;
+  border-width: 1px;
+}
+.list_sub5 li {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 1.6;
+}
+
+.list_main1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #6b64a6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.list_main1 li {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 1.6;
+  border-top-color: white;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.list_main1 li:first-child {
+  border-top-width: 0;
+}
+
+.list_main2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #6b64a6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.list_main2 li {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 1.6;
+  border-top-color: white;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.list_main2 li:first-child {
+  border-top-width: 0;
+}
+
+.list_main3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #6b64a6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.list_main3 li {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 1.6;
+}
+
+.list_main4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #6b64a6;
+  border-color: #554e89;
+  border-style: solid;
+  border-width: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.list_main4 li {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 1.6;
+  border-top-color: #554e89;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.list_main4 li:first-child {
+  border-top-width: 0;
+}
+
+.list_main5 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #6b64a6;
+  border-color: #554e89;
+  border-style: solid;
+  border-width: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.list_main5 li {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 1.6;
+}

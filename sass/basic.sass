@@ -1,0 +1,106 @@
+//Width
+@for $i from 1 through 20
+	.width_#{$i*5}
+		width: $i * 5%
+	.height_#{$i*5}
+		height: $i * 5%
+
+//Padding
+@for $i from 1 through 6
+	.padding_#{$i*5}
+		padding-left: #{$i*5}px
+		padding-bottom: #{$i*5}px
+		padding-top: #{$i*5}px
+		padding-right: #{$i*5}px
+	.paddingLeft_#{$i*5}
+		padding-left: #{$i*5}px
+	.paddingRight_#{$i*5}
+		padding-right: #{$i*5}px
+	.paddingBottom_#{$i*5}
+		padding-bottom: #{$i*5}px
+	.paddingTop_#{$i*5}
+		padding-top: #{$i*5}px
+
+//Margin
+@for $i from 1 through 6
+	.margin#{$i*5}
+		margin-left: #{$i*5}px
+		margin-bottom: #{$i*5}px
+		margin-top: #{$i*5}px
+		margin-right: #{$i*5}px
+	.marginLeft_#{$i*5}
+		margin-left: #{$i*5}px
+	.marginRight_#{$i*5}
+		margin-right: #{$i*5}px
+	.marginBottom_#{$i*5}
+		margin-bottom: #{$i*5}px
+	.marginTop_#{$i*5}
+		margin-top: #{$i*5}px
+
+//Float
+.float_left
+	float: left
+.float_right
+	float: right
+
+//Clearfix
+.clearFix
+	&:before, &:after
+		display: table
+		line-height: 0
+		content: ""
+	&:after
+		clear: both
+
+//ClearText
+.clearText
+	text-indent: -9999px
+	white-space: nowrap
+	line-height: 0
+	font-size: 0
+
+
+//Table
+table.table_border
+	border-collapse: collapse
+	background-color: #ffffff
+	color: #666
+	td, th
+		padding: 5px
+		text-align: left
+		font-weight: normal
+		border-width: 1px
+		border-color: #e2e2e2
+		border-style: solid
+	th, thead td
+
+table.table_horizontal
+	border-collapse: collapse
+	color: #666
+	tr
+		padding: 5px
+		text-align: left
+		font-weight: normal
+		border-bottom-width: 1px
+		border-bottom-style: solid
+	td, th
+		padding: 5px
+		text-align: left
+		font-weight: normal
+	th, thead td
+table.table_vertical
+	border-collapse: collapse
+	color: #666
+	td, th
+		padding: 5px
+		text-align: left
+		font-weight: normal
+		border-right-width: 1px
+		border-right-style: solid
+	td:first-child, th:first-child
+		padding: 5px
+		text-align: left
+		font-weight: normal
+		border-left-width: 1px
+		border-left-style: solid
+	th, thead td
