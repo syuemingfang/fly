@@ -1,0 +1,72 @@
+// Fastest Style //
+@import "compass/css3"
+@mixin fs($type, $color)
+	$colorCompound: adjust-color($color, $hue:hue(#99583D))
+	$colorAnalogous: adjust-color($color, $hue:hue(#E80C7A))
+	$colorComplementary: adjust-color($color, $hue:hue(#00B233))
+	$colorTriad: adjust-color($color, $hue:hue(#FFFC19))
+	$colorTriad2: adjust-color($color, $hue:hue(#0971B2))
+	$colorDark: darken($color, 15%)
+	$colorVeryDark: darken($color, 30%)
+	$colorDeSat: desaturate($color, 20%)
+	$colorVeryDeSat: desaturate($colorDark, 40%)
+	body
+		font-family: Arial, "MS PGothic", "Osaka"
+		font-size: 13px
+		color: #444444
+	a
+		text-decoration: none
+		&:link
+			color: $colorVeryDeSat
+		&:visited
+			color: $colorVeryDeSat
+		&:hover
+			color: $colorCompound
+		&:active
+			color: $colorVeryDeSat
+	hr
+		border: 0px
+		background-color: #cccccc
+		height: 1px
+	// Form //
+	input, button, select, textarea
+		border-width: 1px
+		border-color: #aaaaaa
+		border-style: solid 
+		border-top-width: 1px
+		border-top-color: #cccccc
+		border-top-style: solid
+		padding-left: 0.5em
+		padding-right: 0.5em
+		background-color: #ffffff
+		vertical-align: middle
+		display: inline-block
+		line-height: 1.6
+		@include border-radius(5px)
+		@include single-transition(all, 0.5s, ease, 0)
+		&[type="text"], &[type="password"], &[type="datetime"], &[type="datetime-local"], &[type="date"], &[type="month"], &[type="time"], &[type="week"], &[type="number"], &[type="email"], &[type="url"], &[type="search"], &[type="tel"], &[type="color"],	
+			@include box-shadow(#cccccc 0px 1px 5px inset)
+			&:hover, &:focus
+				border-color: $colorCompound
+				text-decoration: none
+				@include box-shadow(#aaaaaa 0px 1px 5px inset, $colorCompound 0px 0px 5px)
+				outline: 0
+		&[type="button"], &[type="submit"], &[type="reset"], &[type="file"]::-webkit-file-upload-button, button 
+			border-width: 1px
+			border-color: $colorVeryDeSat
+			border-style: solid 
+			border-top-width: 1px
+			border-top-color: $colorDeSat
+			border-top-style: solid
+			color: #ffffff
+			background-color: $colorAnalogous
+			@include text-shadow($colorAnalogous 0px 0px 1px)
+			@include background-image(linear-gradient(top, $colorCompound, $colorDeSat 95%, $colorAnalogous))
+			&:hover, &:focus
+				@include background-image(linear-gradient(top, $colorCompound, $colorDeSat 95%, $colorAnalogous))
+				@include box-shadow(darken($colorCompound, 15%) 0px 1px 2px inset, $colorCompound 0px 0px 5px)
+		&[type="radio"], &[type="checkbox"]
+			border: 0
+			&:hover, &:focus
+				border: 0
+				@include single-box-shadow(#ffffff, 0px, 0px, 0px)

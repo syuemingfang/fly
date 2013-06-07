@@ -1,0 +1,249 @@
+// Fastest Order //
+@import "compass/css3"
+
+// Width & Height //
+@for $i from 1 through 20
+	.fo_width_#{$i*5}
+		width: $i * 5%
+	.fo_height_#{$i*5}
+		height: $i * 5%
+
+// Position //
+.fo_posAbsolute
+	position: absolute
+.fo_posRelative
+	position: relative
+.fo_posFixed
+	position: fixed
+
+// Background //	
+.fo_bgRed
+	background-color: #FF0000
+.fo_bgOrange
+	background-color: #FFA500
+.fo_bgYellow
+	background-color: #FFBF00
+.fo_bgGreen
+	background-color: #008000
+.fo_bgBlue
+	background-color: #0000FF
+.fo_bgIndigo
+	background-color: #4B0082
+.fo_bgViolet
+	background-color: #800880
+
+// text //	
+.fo_textRed
+	background-color: #FF0000
+.fo_textOrange
+	background-color: #FFA500
+.fo_textYellow
+	background-color: #FFBF00
+.fo_textGreen
+	background-color: #008000
+.fo_textBlue
+	background-color: #0000FF
+.fo_textIndigo
+	background-color: #4B0082
+.fo_textViolet
+	background-color: #800880
+
+// Opacity //	
+.fo_opacityMin
+	@include opacity(0.8)
+.fo_opacityMax
+	@include opacity(0.3)
+@for $i from 1 through 10
+	.fo_opacity_#{$i}
+		@include opacity($i*0.1)
+
+// Padding //
+.fo_padding
+	padding-left: 0.5em
+	padding-bottom: 0.5em
+	padding-top: 0.5em
+	padding-right: 0.5em
+.fo_padding_x
+	padding-left: 0.5em
+	padding-right: 0.5em
+.fo_padding_y
+	padding-bottom: 0.5em
+	padding-top: 0.5em
+.fo_paddingMax
+	padding-left: 1em
+	padding-bottom: 1em
+	padding-top: 1em
+	padding-right: 1em
+.fo_paddingMin
+	padding-left: 0.25em
+	padding-bottom: 0.25em
+	padding-top: 0.25em
+	padding-right: 0.25em
+@for $i from 1 through 6
+	.fo_padding_#{$i*5}
+		padding-left: #{$i*5}px
+		padding-bottom: #{$i*5}px
+		padding-top: #{$i*5}px
+		padding-right: #{$i*5}px
+	.fo_paddingLeft_#{$i*5}
+		padding-left: #{$i*5}px
+	.fo_paddingRight_#{$i*5}
+		padding-right: #{$i*5}px
+	.fo_paddingBottom_#{$i*5}
+		padding-bottom: #{$i*5}px
+	.fo_paddingTop_#{$i*5}
+		padding-top: #{$i*5}px
+
+// Margin //
+.fo_margin
+	margin-left: 0.5em
+	margin-bottom: 0.5em
+	margin-top: 0.5em
+	margin-right: 0.5em
+.fo_margin_x
+	margin-left: 0.5em
+	margin-right: 0.5em
+.fo_margin_y
+	margin-bottom: 0.5em
+	margin-top: 0.5em
+.fo_marginMax
+	margin-left: 1em
+	margin-bottom: 1em
+	margin-top: 1em
+	margin-right: 1em
+.fo_marginMin
+	margin-left: 0.25em
+	margin-bottom: 0.25em
+	margin-top: 0.25em
+	margin-right: 0.25em
+@for $i from 1 through 6
+	.fo_margin#{$i*5}
+		margin-left: #{$i*5}px
+		margin-bottom: #{$i*5}px
+		margin-top: #{$i*5}px
+		margin-right: #{$i*5}px
+	.fo_marginLeft_#{$i*5}
+		margin-left: #{$i*5}px
+	.fo_marginRight_#{$i*5}
+		margin-right: #{$i*5}px
+	.fo_marginBottom_#{$i*5}
+		margin-bottom: #{$i*5}px
+	.fo_marginTop_#{$i*5}
+		margin-top: #{$i*5}px
+
+// Pull //
+.fo_pullLeft
+	float: left
+.fo_pullRight
+	float: right
+.fo_pullCenter
+	margin: 0 auto 
+
+// Pull //	
+.fo_pull_x
+	display: inline
+	>li, >dt, >dd
+		display: inline
+.fo_pull_y
+	display: block
+	>li, >dt, >dd
+		display: block
+
+// Shadow //	
+.fo_shadow
+	@include single-box-shadow(#aaaaaa, 0, 0, 0.5em)
+.fo_shadowMin
+	@include single-box-shadow(#cccccc, 0, 0, 0.5em)
+.fo_shadowMax
+	@include single-box-shadow(#888888, 0, 0, 0.5em)
+@for $i from 1 through 10
+	.fo_shadow_#{$i}
+		@include single-box-shadow(#aaaaaa, 0, 0, $i)
+
+// Radius //
+.fo_radius
+	@include border-radius(0.5em)
+.fo_radiusMin
+	@include border-radius(0.25em)
+.fo_radiusMax
+	@include border-radius(1em)
+@for $i from 1 through 10
+	.fo_radius_#{$i}
+		@include border-radius($i)
+
+// Fix //
+.fo_fixTopLeft
+	position: fixed
+	top: 0
+	left: 0
+.fo_fixTopRight
+	position: fixed
+	top: 0
+	right: 0
+.fo_fixBottomLeft
+	position: fixed
+	bottom: 0
+	left: 0		
+.fo_fixBottomLeft
+	position: fixed
+	bottom: 0
+	right: 0
+
+// Clear //
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+	&.fo_clearStyle
+		margin: 0
+		padding: 0
+		border: 0
+		font: inherit
+		font-size: 100%
+		vertical-align: baseline
+		background: none
+	&.fo_clearFix
+		&:before, &:after
+			display: table
+			line-height: 0
+			content: ""
+		&:after
+			clear: both
+	&.fo_clearText
+		text-indent: -9999px
+		white-space: nowrap
+		line-height: 0
+		font-size: 0
+
+// Hide //
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 	
+	&.fo_hide
+		display: none
+	&.fo_hideRadius
+		@include border-radius(0)
+	&.fo_hideBorder
+		border-width: 0
+		>td, >tr, >th, >li, >dt, >dd
+			border-width: 0
+	&.fo_hideBorder_x
+		border-top-width: 0
+		border-bottom-width: 0
+		>td, >tr, >th, >li, >dt, >dd
+		border-top-width: 0
+		border-bottom-width: 0
+	&.fo_hideBorder_y
+		border-left-width: 0
+		border-right-width: 0
+		>td, >tr, >th, >li, >dt, >dd
+		border-left-width: 0
+		border-right-width: 0
+
+.fo_polaroid
+	@include box-sizing(border-box)
+	@include border-radius(3px)	
+	@include single-box-shadow(#888888, 0, 0, 10px)
+	display: inline-block
+	border-color: #ffffff
+	border-style: solid
+	border-width: 0.25em
+	box-sizing: border-box
+	*border-width: 0.25em	//IE7
+	*border-style: solid	//IE7
+	*border-color: #ffffff	//IE7

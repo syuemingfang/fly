@@ -1,0 +1,179 @@
+@import "compass/css3"
+
+$color: #E60000
+$colorAnalogous: adjust-color($color, $hue:hue(#E80C7A))
+$colorAnalogous2: adjust-color($color, $hue:hue(#FF0DFF))
+$colorComplementary: adjust-color($color, $hue:hue(#00B233))
+$colorComplementary2: adjust-color($color, $hue:hue(#00FF48))
+$colorTriad: adjust-color($color, $hue:hue(#FFFC19))
+$colorTriad2: adjust-color($color, $hue:hue(#0971B2))
+$colorCompound: adjust-color($color, $hue:hue(#99583D))
+
+// Analogous //
+$analogousSet2: hue(#FF530D)
+$analogousSet3: hue(#E82C0C)
+$analogousSet4: hue(#E80C7A)
+$analogousSet5: hue(#FF0DFF)
+$analogous2: adjust-color($color, $hue:$analogousSet2)
+$analogous3: adjust-color($color, $hue:$analogousSet3)
+$analogous4: adjust-color($color, $hue:$analogousSet4)
+$analogous5: adjust-color($color, $hue:$analogousSet5)
+
+// Monochromatic //
+$monochromaticSet2: hue(#7F0000)
+$monochromaticSet3: hue(#FF4C4C)
+$monochromaticSet4: hue(#7F2626)
+$monochromaticSet5: hue(#CC0000)
+$monochromatic2: adjust-color($color, $hue:$monochromaticSet2)
+$monochromatic3: adjust-color($color, $hue:$monochromaticSet3)
+$monochromatic4: adjust-color($color, $hue:$monochromaticSet4)
+$monochromatic5: adjust-color($color, $hue:$monochromaticSet5)
+
+// Triad //
+$triadSet2: hue(#B21212)
+$triadSet3: hue(#FFFC19)
+$triadSet4: hue(#1485CC)
+$triadSet5: hue(#0971B2)
+$triad2: adjust-color($color, $hue:$triadSet2)
+$triad3: adjust-color($color, $hue:$triadSet3)
+$triad4: adjust-color($color, $hue:$triadSet4)
+$triad5: adjust-color($color, $hue:$triadSet5)
+
+// Complementary //
+$complementarySet2: hue(#B20000)
+$complementarySet3: hue(#FF1919)
+$complementarySet4: hue(#00B233)
+$complementarySet5: hue(#00FF48)
+$complementary2: adjust-color($color, $hue:$complementarySet2)
+$complementary3: adjust-color($color, $hue:$complementarySet3)
+$complementary4: adjust-color($color, $hue:$complementarySet4)
+$complementary5: adjust-color($color, $hue:$complementarySet5)
+
+// Compound //
+$compoundSet2: hue(#CC4A14)
+$compoundSet3: hue(#99583D)
+$compoundSet4: hue(#40FF40)
+$compoundSet5: hue(#54CC14)
+$compound2: adjust-color($color, $hue:$compoundSet2)
+$compound3: adjust-color($color, $hue:$compoundSet3)
+$compound4: adjust-color($color, $hue:$compoundSet4)
+$compound5: adjust-color($color, $hue:$compoundSet5)
+
+// Shades //
+$shadesSet2: hue(#BF0000)
+$shadesSet3: hue(#7F0000)
+$shadesSet4: hue(#400000)
+$shadesSet5: hue(#E50000)
+$shades2: adjust-color($color, $hue:$shadesSet2)
+$shades3: adjust-color($color, $hue:$shadesSet3)
+$shades4: adjust-color($color, $hue:$shadesSet4)
+$shades5: adjust-color($color, $hue:$shadesSet5)
+
+// Color //
+.color1
+	background-color: $color
+.color2
+	background-color: $colorAnalogous
+.color3
+	background-color: $colorAnalogous2
+.color4
+	background-color: $colorComplementary
+.color5
+	background-color: $colorComplementary2
+.color6
+	background-color: $colorTriad
+.color7
+	background-color: $colorTriad2
+.color8
+	background-color: $colorCompound
+
+// Analogous //
+.analogous1
+	background-color: $color
+.analogous2
+	background-color: $analogous2
+.analogous3
+	background-color: $analogous3
+.analogous4
+	background-color: $analogous4
+.analogous5
+	background-color: $analogous5
+
+// Monochromatic //
+.monochromatic1
+	background-color: $color
+.monochromatic2
+	background-color: $monochromatic2
+.monochromatic3
+	background-color: $monochromatic3
+.monochromatic4
+	background-color: $monochromatic4
+.monochromatic5
+	background-color: $monochromatic5
+
+// Triad //
+.triad1
+	background-color: $color
+.triad2
+	background-color: $triad2
+.triad3
+	background-color: $triad3
+.triad4
+	background-color: $triad4
+.triad5
+	background-color: $triad5
+
+// Complementary //
+.complementary1
+	background-color: $color
+.complementary2
+	background-color: $complementary2
+.complementary3
+	background-color: $complementary3
+.complementary4
+	background-color: $complementary4
+.complementary5
+	background-color: $complementary5
+
+// Compound //
+.compound1
+	background-color: $color
+.compound2
+	background-color: $compound2
+.compound3
+	background-color: $compound3
+.compound4
+	background-color: $compound4
+.compound5
+	background-color: $compound5
+
+// Shades //
+.shades1
+	background-color: $color
+.shades2
+	background-color: $shades2
+.shades3
+	background-color: $shades3
+.shades4
+	background-color: $shades4
+.shades5
+	background-color: $shades5	
+
+@for $i from 1 through 5
+	.analogous#{$i}, .monochromatic#{$i}, .triad#{$i}, .complementary#{$i}, .compound#{$i}, .shades#{$i}
+		display: block
+		width: 64px
+		height: 64px
+		float: left
+		margin-left: 3px
+
+@for $i from 1 through 8
+	.color#{$i},
+		display: block
+		width: 64px
+		height: 64px
+		float: left
+		margin-left: 3px
+
+
+
