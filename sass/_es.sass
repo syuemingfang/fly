@@ -1,13 +1,14 @@
 // EST Style //
 @import "compass/css3"
 @mixin es($type, $color)
-	$color: lighten($color, 10%)
-	$colorCute: adjust_hue(saturate(lighten($color, 10%), 80%), 10)
+	$color2: adjust-color($color, $hue:20%)
+	$color3: adjust-color($color, $hue:-20%)
+	$color3: adjust-color($color, $hue:-20%)
+	$colorContrast: adjust-color($color, $hue:160%)
 	$colorDark: darken($color, 15%)
 	$colorVeryDark: darken($color, 30%)
 	$colorDeSat: desaturate($color, 20%)
 	$colorVeryDeSat: desaturate($colorDark, 60%)
-	$colorHue: adjust_hue($color, 20%)
 	body
 		font-family: Arial, "MS PGothic", "Osaka"
 		font-size: 13px
@@ -18,7 +19,7 @@
 		&:visited
 			color: $colorVeryDeSat
 		&:hover
-			color: $colorVeryDark
+			color: $colorContrast
 		&:active
 			color: $colorVeryDeSat
 	// Form //

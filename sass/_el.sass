@@ -2,12 +2,13 @@
 @import "compass/css3"
 @mixin el($type, $color)
 	// Color Set //
-	$color: lighten($color, 10%)
-	$colorCute: adjust_hue(saturate(lighten($color, 10%), 80%), 10)
+	$color2: adjust-color($color, $hue:20%)
+	$color3: adjust-color($color, $hue:-20%)
+	$colorContrast: adjust-color($color, $hue:100%)
 	$colorDark: darken($color, 15%)
 	$colorVeryDark: darken($color, 30%)
 	$colorDeSat: desaturate($color, 20%)
-	$colorHue: adjust_hue($color, 20%)
+	$colorVeryDeSat: desaturate($colorDark, 60%)
 	// Header Main //
 	[class*=el_header_main], [class*=el_header#{$type}_main]
 		color: #ffffff
@@ -36,8 +37,8 @@
 		@include background-image(linear-gradient(top, $colorDark 40%, #ffffff))
 	.el_header_main6, .el_header#{$type}_main6
 		padding-left: 0.5em
-		background-color: $colorDark
-		@include background-image(linear-gradient(top, #ffffff 10%, $colorDark))
+		background-color: $color2
+		@include background-image(linear-gradient(top, $color2, $colorDark))
 		@include border-bottom-left-radius(10px)
 		@include border-bottom-right-radius(10px)
 	.el_header_main7, .el_header#{$type}_main7
@@ -54,7 +55,7 @@
 		border-bottom-width: 2px
 		background-color: $colorDark
 	.el_header_main9, .el_header#{$type}_main9
-		border-left-color: $colorHue
+		border-left-color: $color2
 		border-left-style: solid
 		border-left-width: 0.25em
 		padding-left: 0.5em
@@ -75,8 +76,8 @@
 		@include border-top-left-radius(15px)
 	.el_header_main12, .el_header#{$type}_main12
 		padding-left: 0.5em
-		background-color: $colorCute
-		@include background-image(linear-gradient(top, $color, $colorCute))	
+		background-color: $color2
+		@include background-image(linear-gradient(top, $color, $color2))	
 	.el_header_main13, .el_header#{$type}_main13
 		position: relative
 		padding-left: 0.5em
@@ -92,6 +93,8 @@
 			z-index: 9999
 			right: 0
 			background-color: #ffffff
+	.el_header_main14, .el_header#{$type}_main14
+		color: $colorContrast
 
 	// Header Sub //
 	.el_header_sub1, .el_header#{$type}_sub1

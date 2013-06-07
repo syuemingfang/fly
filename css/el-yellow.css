@@ -1,85 +1,630 @@
-/*
-Syntax error: Invalid CSS after "...lass*=el_header": expected "]", was "#ff0_main]"
-        on line 12 of C:/inetpub/wwwroot/skin/sass/_el.sass, in `el'
-        from line 2 of C:/inetpub/wwwroot/skin/sass/el-yellow.sass
+[class*=el_header_main], [class*=el_headeryellow_main] {
+  color: white;
+  line-height: 1.6;
+}
 
-Backtrace:
-C:/inetpub/wwwroot/skin/sass/_el.sass:12:in `el'
-C:/inetpub/wwwroot/skin/sass/el-yellow.sass:2
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1146:in `expected'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1084:in `expected'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1079:in `tok!'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:768:in `attrib'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:672:in `simple_selector_sequence'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:640:in `_selector'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:629:in `selector_comma_sequence'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1065:in `expr!'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:314:in `visit_rule'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:268:in `block (3 levels) in visit_mixin'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:268:in `map'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:268:in `block (2 levels) in visit_mixin'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:268:in `block in visit_mixin'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:70:in `perform_arguments'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:263:in `visit_mixin'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/root_node.rb:20:in `render'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `call'
-K:/xampp/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-K:/xampp/Ruby/bin/compass:23:in `load'
-K:/xampp/Ruby/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...lass*=el_header\": expected \"]\", was \"#ff0_main]\"\A         on line 12 of C:/inetpub/wwwroot/skin/sass/_el.sass, in `el'\A         from line 2 of C:/inetpub/wwwroot/skin/sass/el-yellow.sass"; }
+.el_header_main1, .el_headeryellow_main1 {
+  padding-left: 0.5em;
+  background-color: #ff7300;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff7300), color-stop(100%, #b35100));
+  background-image: -webkit-linear-gradient(top, #ff7300, #b35100);
+  background-image: -moz-linear-gradient(top, #ff7300, #b35100);
+  background-image: -o-linear-gradient(top, #ff7300, #b35100);
+  background-image: linear-gradient(top, #ff7300, #b35100);
+}
+
+.el_header_main2, .el_headeryellow_main2 {
+  padding-left: 0.5em;
+  background-color: #ff7300;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff7300), color-stop(100%, #b35100));
+  background-image: -webkit-linear-gradient(top, #ff7300, #b35100);
+  background-image: -moz-linear-gradient(top, #ff7300, #b35100);
+  background-image: -o-linear-gradient(top, #ff7300, #b35100);
+  background-image: linear-gradient(top, #ff7300, #b35100);
+}
+
+.el_header_main3, .el_headeryellow_main3 {
+  padding-left: 0.5em;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff7300), color-stop(50%, #b35100), color-stop(100%, #ff7300));
+  background-image: -webkit-linear-gradient(top, #ff7300, #b35100, #ff7300);
+  background-image: -moz-linear-gradient(top, #ff7300, #b35100, #ff7300);
+  background-image: -o-linear-gradient(top, #ff7300, #b35100, #ff7300);
+  background-image: linear-gradient(top, #ff7300, #b35100, #ff7300);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.el_header_main4, .el_headeryellow_main4 {
+  padding-left: 0.5em;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b35100), color-stop(100%, #ff7300));
+  background-image: -webkit-linear-gradient(top, #b35100, #ff7300);
+  background-image: -moz-linear-gradient(top, #b35100, #ff7300);
+  background-image: -o-linear-gradient(top, #b35100, #ff7300);
+  background-image: linear-gradient(top, #b35100, #ff7300);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.el_header_main5, .el_headeryellow_main5 {
+  padding-left: 0.5em;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #b35100), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #b35100 40%, #ffffff);
+  background-image: -moz-linear-gradient(top, #b35100 40%, #ffffff);
+  background-image: -o-linear-gradient(top, #b35100 40%, #ffffff);
+  background-image: linear-gradient(top, #b35100 40%, #ffffff);
+}
+
+.el_header_main6, .el_headeryellow_main6 {
+  padding-left: 0.5em;
+  background-color: #ffc800;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffc800), color-stop(100%, #b35100));
+  background-image: -webkit-linear-gradient(top, #ffc800, #b35100);
+  background-image: -moz-linear-gradient(top, #ffc800, #b35100);
+  background-image: -o-linear-gradient(top, #ffc800, #b35100);
+  background-image: linear-gradient(top, #ffc800, #b35100);
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.el_header_main7, .el_headeryellow_main7 {
+  padding-left: 0.5em;
+  border-bottom-color: #b35100;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, #ffffff), color-stop(100%, #b35100));
+  background-image: -webkit-linear-gradient(top, #ffffff 10%, #b35100);
+  background-image: -moz-linear-gradient(top, #ffffff 10%, #b35100);
+  background-image: -o-linear-gradient(top, #ffffff 10%, #b35100);
+  background-image: linear-gradient(top, #ffffff 10%, #b35100);
+}
+
+.el_header_main8, .el_headeryellow_main8 {
+  padding-left: 0.5em;
+  border-bottom-color: #662e00;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  background-color: #b35100;
+}
+
+.el_header_main9, .el_headeryellow_main9 {
+  border-left-color: #ffc800;
+  border-left-style: solid;
+  border-left-width: 0.25em;
+  padding-left: 0.5em;
+  background-color: #ff7300;
+}
+
+.el_header_main10, .el_headeryellow_main10 {
+  padding-left: 0.5em;
+  border-color: #b35100;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b35100), color-stop(100%, #ff7300));
+  background-image: -webkit-linear-gradient(top, #b35100, #ff7300);
+  background-image: -moz-linear-gradient(top, #b35100, #ff7300);
+  background-image: -o-linear-gradient(top, #b35100, #ff7300);
+  background-image: linear-gradient(top, #b35100, #ff7300);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.el_header_main11, .el_headeryellow_main11 {
+  padding-left: 0.5em;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff7300), color-stop(50%, #b35100), color-stop(100%, #ff7300));
+  background-image: -webkit-linear-gradient(top, #ff7300, #b35100, #ff7300);
+  background-image: -moz-linear-gradient(top, #ff7300, #b35100, #ff7300);
+  background-image: -o-linear-gradient(top, #ff7300, #b35100, #ff7300);
+  background-image: linear-gradient(top, #ff7300, #b35100, #ff7300);
+  -moz-border-radius-topright: 15px;
+  -webkit-border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -webkit-border-top-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.el_header_main12, .el_headeryellow_main12 {
+  padding-left: 0.5em;
+  background-color: #ffc800;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff7300), color-stop(100%, #ffc800));
+  background-image: -webkit-linear-gradient(top, #ff7300, #ffc800);
+  background-image: -moz-linear-gradient(top, #ff7300, #ffc800);
+  background-image: -o-linear-gradient(top, #ff7300, #ffc800);
+  background-image: linear-gradient(top, #ff7300, #ffc800);
+}
+
+.el_header_main13, .el_headeryellow_main13 {
+  position: relative;
+  padding-left: 0.5em;
+  background-color: #b35100;
+  border-top-color: #b35100;
+  border-top-style: solid;
+  border-top-width: 2px;
+}
+.el_header_main13:after, .el_headeryellow_main13:after {
+  content: "";
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  background-color: white;
+}
+
+.el_header_main14, .el_headeryellow_main14 {
+  color: #00ff1e;
+}
+
+.el_header_sub1, .el_headeryellow_sub1 {
+  color: #e67619;
+  line-height: 1.6;
+  border-top-color: gainsboro;
+  border-top-style: solid;
+  border-top-width: 5px;
+  border-bottom-color: #898989;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.el_header_sub2, .el_headeryellow_sub2 {
+  color: #e67619;
+  line-height: 1.6;
+  border-left-color: #d5d4d9;
+  border-left-style: solid;
+  border-left-width: 5px;
+  padding-left: 5px;
+}
+
+.el_header_sub3, .el_headeryellow_sub3 {
+  color: #e67619;
+  line-height: 1.6;
+  border-left-color: #ff7300;
+  border-left-style: solid;
+  border-left-width: 5px;
+  padding-left: 5px;
+}
+
+.el_header_sub4, .el_headeryellow_sub4 {
+  color: #e67619;
+  line-height: 1.6;
+  border-bottom-color: #c8c8c8;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+}
+
+.el_header_sub5, .el_headeryellow_sub5 {
+  color: #e67619;
+  line-height: 1.6;
+  padding-left: 5px;
+  border-color: #c8c8c8;
+  border-style: solid;
+  border-width: 1px;
+  border-left-color: #ff7300;
+  border-left-style: solid;
+  border-left-width: 5px;
+}
+
+.el_header_sub6, .el_headeryellow_sub6 {
+  color: #e67619;
+  line-height: 1.6;
+  border-bottom-color: #e67619;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+}
+
+.el_header_sub7, .el_headeryellow_sub7 {
+  color: #b35100;
+  line-height: 1.6;
+  border-bottom-color: #b35100;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, #ffffff), color-stop(100%, #efefef));
+  background-image: -webkit-linear-gradient(top, #ffffff 10%, #efefef);
+  background-image: -moz-linear-gradient(top, #ffffff 10%, #efefef);
+  background-image: -o-linear-gradient(top, #ffffff 10%, #efefef);
+  background-image: linear-gradient(top, #ffffff 10%, #efefef);
+}
+
+.el_header_sub8, .el_headeryellow_sub8 {
+  color: #e67619;
+  line-height: 1.6;
+  padding-left: 5px;
+  border-color: #c8c8c8;
+  border-style: solid;
+  border-width: 1px;
+  border-top-color: #ff7300;
+  border-top-style: solid;
+  border-top-width: 5px;
+}
+
+.el_header_sub9, .el_headeryellow_sub9 {
+  line-height: 1.6;
+  font-weight: bold;
+  color: #e67619;
+  letter-spacing: 0.5em;
+}
+
+.el_header_sub10, .el_headeryellow_sub10 {
+  line-height: 1.6;
+  font-weight: bold;
+  color: #e67619;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  border-top-color: #c8c8c8;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-color: #c8c8c8;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.el_header_sub10:before, .el_headeryellow_sub10:before {
+  content: "| ";
+}
+
+.el_header_sub11, .el_headeryellow_sub11 {
+  line-height: 1.6;
+  font-weight: bold;
+  color: #e67619;
+  padding-bottom: 0.25em;
+  border-bottom-color: #e67619;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.el_block_main1, .el_blockyellow_main1 {
+  color: white;
+  padding: 5px;
+  background-color: #ff7300;
+}
+
+.el_block_main2, .el_blockyellow_main2 {
+  color: white;
+  padding: 5px;
+  background-color: #ff7300;
+  border-color: #b35100;
+  border-style: dotted;
+  border-width: 2px;
+}
+
+.el_block_main3, .el_blockyellow_main3 {
+  color: white;
+  padding: 5px;
+  background-color: #ff7300;
+  border-top-color: #b35100;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-bottom-color: #b35100;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.el_table_main1, .el_tableyellow_main1 {
+  border-collapse: collapse;
+  color: #666666;
+  background-color: white;
+}
+.el_table_main1 td, .el_table_main1 th, .el_tableyellow_main1 td, .el_tableyellow_main1 th {
+  padding: 5px;
+  border-color: #e2e2e2;
+  border-style: solid;
+  border-width: 1px;
+}
+.el_table_main1 tbody th, .el_table_main1 th, .el_tableyellow_main1 tbody th, .el_tableyellow_main1 th {
+  color: white;
+  background-color: #e67619;
+  background-image: none;
+  border-bottom-color: #b85e14;
+}
+.el_table_main1 thead th, .el_table_main1 thead td, .el_tableyellow_main1 thead th, .el_tableyellow_main1 thead td {
+  color: white;
+  border-color: #b85e14;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b35100), color-stop(100%, #662e00));
+  background-image: -webkit-linear-gradient(top, #b35100, #662e00);
+  background-image: -moz-linear-gradient(top, #b35100, #662e00);
+  background-image: -o-linear-gradient(top, #b35100, #662e00);
+  background-image: linear-gradient(top, #b35100, #662e00);
+}
+.el_table_main1 td:first-child, .el_table_main1 th:first-child, .el_tableyellow_main1 td:first-child, .el_tableyellow_main1 th:first-child {
+  border-left-width: 0;
+}
+
+.el_table_main2, .el_tableyellow_main2 {
+  border-collapse: collapse;
+  background-color: white;
+}
+.el_table_main2 tr, .el_tableyellow_main2 tr {
+  border-bottom-color: #e2e2e2;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.el_table_main2 td, .el_table_main2 th, .el_tableyellow_main2 td, .el_tableyellow_main2 th {
+  padding: 5px;
+}
+.el_table_main2 tbody th, .el_table_main2 th, .el_tableyellow_main2 tbody th, .el_tableyellow_main2 th {
+  color: white;
+  background-color: #e67619;
+  background-image: none;
+  border-bottom-color: #b85e14;
+}
+.el_table_main2 thead th, .el_table_main2 thead td, .el_tableyellow_main2 thead th, .el_tableyellow_main2 thead td {
+  color: white;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b35100), color-stop(100%, #662e00));
+  background-image: -webkit-linear-gradient(top, #b35100, #662e00);
+  background-image: -moz-linear-gradient(top, #b35100, #662e00);
+  background-image: -o-linear-gradient(top, #b35100, #662e00);
+  background-image: linear-gradient(top, #b35100, #662e00);
+}
+
+.el_table_main3, .el_tableyellow_main3 {
+  border-collapse: collapse;
+  background-color: white;
+  border-color: #e67619;
+  border-style: solid;
+  border-width: 3px;
+}
+.el_table_main3 td, .el_table_main3 th, .el_tableyellow_main3 td, .el_tableyellow_main3 th {
+  padding: 5px;
+  border-right-color: #e67619;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+.el_table_main3 tbody th, .el_table_main3 th, .el_tableyellow_main3 tbody th, .el_tableyellow_main3 th {
+  color: white;
+  background-color: #e67619;
+  background-image: none;
+  border-bottom-color: #b85e14;
+}
+.el_table_main3 th, .el_table_main3 thead td, .el_tableyellow_main3 th, .el_tableyellow_main3 thead td {
+  color: white;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b35100), color-stop(100%, #662e00));
+  background-image: -webkit-linear-gradient(top, #b35100, #662e00);
+  background-image: -moz-linear-gradient(top, #b35100, #662e00);
+  background-image: -o-linear-gradient(top, #b35100, #662e00);
+  background-image: linear-gradient(top, #b35100, #662e00);
+}
+
+.el_table_main4, .el_tableyellow_main4 {
+  border-collapse: collapse;
+  background-color: white;
+}
+.el_table_main4 tr, .el_tableyellow_main4 tr {
+  border-bottom-color: #e67619;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.el_table_main4 td, .el_table_main4 th, .el_tableyellow_main4 td, .el_tableyellow_main4 th {
+  padding: 5px;
+}
+.el_table_main4 tbody th, .el_table_main4 th, .el_tableyellow_main4 tbody th, .el_tableyellow_main4 th {
+  color: white;
+  background-color: #e67619;
+  background-image: none;
+  border-bottom-color: #b85e14;
+}
+.el_table_main4 th, .el_table_main4 thead td, .el_tableyellow_main4 th, .el_tableyellow_main4 thead td {
+  color: white;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b35100), color-stop(100%, #662e00));
+  background-image: -webkit-linear-gradient(top, #b35100, #662e00);
+  background-image: -moz-linear-gradient(top, #b35100, #662e00);
+  background-image: -o-linear-gradient(top, #b35100, #662e00);
+  background-image: linear-gradient(top, #b35100, #662e00);
+}
+
+.el_table_main5, .el_tableyellow_main5 {
+  border-collapse: collapse;
+  color: #666666;
+  border-color: #b85e14;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+}
+.el_table_main5 td, .el_table_main5 th, .el_tableyellow_main5 td, .el_tableyellow_main5 th {
+  padding: 5px;
+  border-color: #e67619;
+  border-style: solid;
+  border-width: 1px;
+}
+.el_table_main5 tbody th, .el_table_main5 th, .el_tableyellow_main5 tbody th, .el_tableyellow_main5 th {
+  color: white;
+  background-color: #e67619;
+  background-image: none;
+  border-bottom-color: #cc5c00;
+}
+.el_table_main5 thead th, .el_table_main5 thead td, .el_tableyellow_main5 thead th, .el_tableyellow_main5 thead td {
+  color: white;
+  border-color: #b85e14;
+  background-color: #b35100;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b35100), color-stop(100%, #662e00));
+  background-image: -webkit-linear-gradient(top, #b35100, #662e00);
+  background-image: -moz-linear-gradient(top, #b35100, #662e00);
+  background-image: -o-linear-gradient(top, #b35100, #662e00);
+  background-image: linear-gradient(top, #b35100, #662e00);
+}
+
+.el_table_sub1, .el_tableyellow_sub1 {
+  border-collapse: collapse;
+  color: #666666;
+  border-color: #cc5c00;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+}
+.el_table_sub1 td, .el_table_sub1 th, .el_tableyellow_sub1 td, .el_tableyellow_sub1 th {
+  padding: 5px;
+  border-color: #e2e2e2;
+  border-style: solid;
+  border-width: 1px;
+}
+.el_table_sub1 tbody th, .el_table_sub1 th, .el_tableyellow_sub1 tbody th, .el_tableyellow_sub1 th {
+  color: #e67619;
+  border-color: #b35100;
+  background-color: white;
+}
+.el_table_sub1 thead th, .el_table_sub1 thead td, .el_tableyellow_sub1 thead th, .el_tableyellow_sub1 thead td {
+  color: #e67619;
+  border-color: #b35100;
+  background-color: white;
+}
+
+.el_table_sub2, .el_tableyellow_sub2 {
+  border-collapse: collapse;
+  background-color: white;
+}
+.el_table_sub2 tr, .el_tableyellow_sub2 tr {
+  border-bottom-color: #e2e2e2;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.el_table_sub2 td, .el_table_sub2 th, .el_tableyellow_sub2 td, .el_tableyellow_sub2 th {
+  padding: 5px;
+}
+.el_table_sub2 tbody th, .el_table_sub2 th, .el_tableyellow_sub2 tbody th, .el_tableyellow_sub2 th {
+  color: white;
+  background-color: #ff7300;
+  background-image: none;
+  border-bottom-color: #b85e14;
+}
+.el_table_sub2 thead th, .el_table_sub2 thead td, .el_tableyellow_sub2 thead th, .el_tableyellow_sub2 thead td {
+  color: #e67619;
+  border-color: #b35100;
+  background-color: white;
+  border-bottom-color: #cc5c00;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.el_table_sub3, .el_tableyellow_sub3 {
+  border-collapse: collapse;
+  background-color: white;
+  border-color: #e67619;
+  border-style: solid;
+  border-width: 2px;
+}
+.el_table_sub3 td, .el_table_sub3 th, .el_tableyellow_sub3 td, .el_tableyellow_sub3 th {
+  padding: 5px;
+  border-right-color: #ff7300;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+.el_table_sub3 tbody th, .el_table_sub3 th, .el_tableyellow_sub3 tbody th, .el_tableyellow_sub3 th {
+  color: #ff7300;
+  border-color: #b35100;
+  background-color: white;
+}
+.el_table_sub3 th, .el_table_sub3 thead td, .el_tableyellow_sub3 th, .el_tableyellow_sub3 thead td {
+  color: #e67619;
+  border-color: #b35100;
+  background-color: white;
+}
+
+.el_table_sub4, .el_tableyellow_sub4 {
+  border-collapse: collapse;
+  background-color: white;
+}
+.el_table_sub4 tr, .el_tableyellow_sub4 tr {
+  border-bottom-color: #ff7300;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.el_table_sub4 td, .el_table_sub4 th, .el_tableyellow_sub4 td, .el_tableyellow_sub4 th {
+  padding: 5px;
+}
+.el_table_sub4 tbody th, .el_table_sub4 th, .el_tableyellow_sub4 tbody th, .el_tableyellow_sub4 th {
+  color: #e67619;
+  border-color: #b85e14;
+  background-color: white;
+}
+.el_table_sub4 th, .el_table_sub4 thead td, .el_tableyellow_sub4 th, .el_tableyellow_sub4 thead td {
+  color: #e67619;
+  border-color: #b85e14;
+  background-color: white;
+}
+
+.el_table_sub5, .el_tableyellow_sub5 {
+  border-collapse: collapse;
+  background-color: white;
+  border-top-color: #ff7300;
+  border-top-style: solid;
+  border-top-width: 3px;
+}
+.el_table_sub5 tr, .el_tableyellow_sub5 tr {
+  border-bottom-color: #ff7300;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.el_table_sub5 td, .el_table_sub5 th, .el_tableyellow_sub5 td, .el_tableyellow_sub5 th {
+  padding: 5px;
+}
+.el_table_sub5 tbody th, .el_table_sub5 th, .el_tableyellow_sub5 tbody th, .el_tableyellow_sub5 th {
+  color: #e67619;
+  border-color: #b85e14;
+  background-color: white;
+}
+.el_table_sub5 th, .el_table_sub5 thead td, .el_tableyellow_sub5 th, .el_tableyellow_sub5 thead td {
+  color: #e67619;
+  border-color: #b85e14;
+  background-color: white;
+}
+
+.el_list_main1, .el_listyellow_main1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.el_list_main1 > li, .el_listyellow_main1 > li {
+  color: white;
+  padding: 0.25em;
+  background-color: #ff7300;
+  border-top-color: white;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.el_list_main1 > li:first-child, .el_listyellow_main1 > li:first-child {
+  border-width: 0;
+}
+
+.el_list_main2, .el_listyellow_main2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-color: #b35100;
+  border-style: solid;
+  border-width: 2px;
+}
+.el_list_main2 > li, .el_listyellow_main2 > li {
+  color: white;
+  padding: 0.25em;
+  background-color: #ff7300;
+  border-top-color: white;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.el_list_main2 > li:first-child, .el_listyellow_main2 > li:first-child {
+  border-width: 0;
+}

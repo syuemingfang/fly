@@ -7,17 +7,8 @@
 <link href="css/es-<?php echo $_GET["type"]; ?>.css" rel="stylesheet" />
 <link href="css/eo.css" rel="stylesheet" />
 <link href="css/el-<?php echo $_GET["type"]; ?>.css" rel="stylesheet" />
-<style>
-hr{
-  border: 0px;
-  background-color: #cccccc;
-  height: 1px;
-}
-</style>
+<link href="css/style.css" rel="stylesheet" />
 </head>
-<body>
-  <div class="eo_polaroid">xxx</div>
-<div>
 <h1>EST</h1>
 <cite>style + order + layout</cite>
 </div>
@@ -134,7 +125,7 @@ hr{
       天気 スポーツ<br />ファイナンス テレビ
     </div><hr />";
     }
-    ?> 
+    ?>
 <a name="blockSub"></a>
 <h2>Block(Sub)</h2>
 <?php    
@@ -144,6 +135,5 @@ hr{
       天気 スポーツ<br />ファイナンス テレビ
     </div><hr />";
     }
-    ?>    
-</body>
-</html>
+    ?>
+</body></html>
