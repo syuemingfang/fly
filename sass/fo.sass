@@ -3,195 +3,228 @@
 
 // Width & Height //
 @for $i from 1 through 20
-	.fo_width_#{$i*5}
+	.fo_wd_#{$i*5}
+		float: left
 		width: $i * 5%
-	.fo_height_#{$i*5}
+	.fo_ht_#{$i*5}
+		float: left
 		height: $i * 5%
 
-// Position //
-.fo_posAbsolute
-	position: absolute
-.fo_posRelative
-	position: relative
-.fo_posFixed
-	position: fixed
+// Base //
+.fo_wp
+	position: relative	
+	width: 100%
+	overflow: hidden
 
-// Background //	
-.fo_bgRed
+// Background //
+.fo_bg_white
+	background-color: #FFFFFF
+.fo_bg_gray
+	background-color: #aaaaaa
+.fo_bg_blue
+	color: #ffffff
+	background-color: #404040	
+	&:link, &:visited, &:hover, &:active
+		color: #FFFFFF
+.fo_bg_red
+	color: #ffffff
 	background-color: #FF0000
-.fo_bgOrange
+	&:link, &:visited, &:hover, &:active
+		color: #FFFFFF
+.fo_bg_orange
+	color: #ffffff
 	background-color: #FFA500
-.fo_bgYellow
+	&:link, &:visited, &:hover, &:active
+		color: #FFFFFF
+.fo_bg_yellow
+	color: #ffffff
 	background-color: #FFBF00
-.fo_bgGreen
+	&:link, &:visited, &:hover, &:active
+		color: #FFFFFF
+.fo_bg_green
+	color: #ffffff
 	background-color: #008000
-.fo_bgBlue
+	&:link, &:visited, &:hover, &:active
+		color: #FFFFFF
+.fo_bg_blue
+	color: #ffffff
 	background-color: #0000FF
-.fo_bgIndigo
+	&:link, &:visited, &:hover, &:active
+		color: #FFFFFF
+.fo_bg_indigo
+	color: #ffffff
 	background-color: #4B0082
-.fo_bgViolet
+	&:link, &:visited, &:hover, &:active
+		color: #FFFFFF
+.fo_bg_violet
+	color: #ffffff
 	background-color: #800880
+	&:link, &:visited, &:hover, &:active
+		color: #FFFFFF
 
-// text //	
-.fo_textRed
-	background-color: #FF0000
-.fo_textOrange
-	background-color: #FFA500
-.fo_textYellow
-	background-color: #FFBF00
-.fo_textGreen
-	background-color: #008000
-.fo_textBlue
-	background-color: #0000FF
-.fo_textIndigo
-	background-color: #4B0082
-.fo_textViolet
-	background-color: #800880
+// Text Color //	
+.fo_tc_white
+	color: #FFFFFF
+	&:link, &:visited, &:hover, &:active
+		color: #FFFFFF
+.fo_tc_gray
+	color: #aaaaaa
+	&:link, &:visited, &:hover, &:active
+		color: #aaaaaa
+.fo_tc_blue
+	color: #404040
+	&:link, &:visited, &:hover, &:active
+		color: #404040
+.fo_tc_red
+	color: #FF0000
+	&:link, &:visited, &:hover, &:active
+		color: #FF0000
+.fo_tc_orange
+	color: #FFA500
+	&:link, &:visited, &:hover, &:active
+		coleor: #FFA500
+.fo_tc_yellow
+	color: #FFBF00
+	&:link, &:visited, &:hover, &:active
+		color: #FFBF00
+.fo_tc_green
+	color: #008000
+	&:link, &:visited, &:hover, &:active
+		color: #008000
+.fo_tc_blue
+	color: #0000FF
+	&:link, &:visited, &:hover, &:active
+		color: #0000FF
+.fo_tc_indigo
+	color: #4B0082
+	&:link, &:visited, &:hover, &:active
+		color: #4B0082
+.fo_tc_violet
+	color: #800880
+	&:link, &:visited, &:hover, &:active
+		color: #800880
 
-// Opacity //	
-.fo_opacityMin
+// Text Size //
+.fo_ts_max
+	font-size: 120%
+.fo_ts_min
+	font-size: 82.5%
+
+// Text Align //
+.fo_ta_left
+	text-align: left
+.fo_ta_center
+	text-align: center
+.fo_ta_right
+	text-align: right
+
+// Opacity //
+.fo_op	
+	@include opacity(0.7)
+.fo_op_min
 	@include opacity(0.8)
-.fo_opacityMax
+.fo_op_max
 	@include opacity(0.3)
-@for $i from 1 through 10
-	.fo_opacity_#{$i}
-		@include opacity($i*0.1)
 
 // Padding //
-.fo_padding
+.fo_pd
 	padding-left: 0.5em
 	padding-bottom: 0.5em
 	padding-top: 0.5em
 	padding-right: 0.5em
-.fo_padding_x
-	padding-left: 0.5em
-	padding-right: 0.5em
-.fo_padding_y
-	padding-bottom: 0.5em
-	padding-top: 0.5em
-.fo_paddingMax
+.fo_pd_max
 	padding-left: 1em
 	padding-bottom: 1em
 	padding-top: 1em
 	padding-right: 1em
-.fo_paddingMin
+.fo_pd_min
 	padding-left: 0.25em
 	padding-bottom: 0.25em
 	padding-top: 0.25em
 	padding-right: 0.25em
-@for $i from 1 through 6
-	.fo_padding_#{$i*5}
-		padding-left: #{$i*5}px
-		padding-bottom: #{$i*5}px
-		padding-top: #{$i*5}px
-		padding-right: #{$i*5}px
-	.fo_paddingLeft_#{$i*5}
-		padding-left: #{$i*5}px
-	.fo_paddingRight_#{$i*5}
-		padding-right: #{$i*5}px
-	.fo_paddingBottom_#{$i*5}
-		padding-bottom: #{$i*5}px
-	.fo_paddingTop_#{$i*5}
-		padding-top: #{$i*5}px
 
 // Margin //
-.fo_margin
+.fo_mg
 	margin-left: 0.5em
 	margin-bottom: 0.5em
 	margin-top: 0.5em
 	margin-right: 0.5em
-.fo_margin_x
-	margin-left: 0.5em
-	margin-right: 0.5em
-.fo_margin_y
-	margin-bottom: 0.5em
-	margin-top: 0.5em
-.fo_marginMax
+.fo_mg_max
 	margin-left: 1em
 	margin-bottom: 1em
 	margin-top: 1em
 	margin-right: 1em
-.fo_marginMin
+.fo_mg_min
 	margin-left: 0.25em
 	margin-bottom: 0.25em
 	margin-top: 0.25em
 	margin-right: 0.25em
-@for $i from 1 through 6
-	.fo_margin#{$i*5}
-		margin-left: #{$i*5}px
-		margin-bottom: #{$i*5}px
-		margin-top: #{$i*5}px
-		margin-right: #{$i*5}px
-	.fo_marginLeft_#{$i*5}
-		margin-left: #{$i*5}px
-	.fo_marginRight_#{$i*5}
-		margin-right: #{$i*5}px
-	.fo_marginBottom_#{$i*5}
-		margin-bottom: #{$i*5}px
-	.fo_marginTop_#{$i*5}
-		margin-top: #{$i*5}px
 
-// Pull //
-.fo_pullLeft
+// float //
+.fo_fl_left
 	float: left
-.fo_pullRight
+.fo_fl_right
 	float: right
-.fo_pullCenter
+.fo_fl_center
 	margin: 0 auto 
 
 // Pull //	
-.fo_pull_x
+.fo_x
 	display: inline
 	>li, >dt, >dd
 		display: inline
-.fo_pull_y
+.fo_y
 	display: block
 	>li, >dt, >dd
 		display: block
 
 // Shadow //	
-.fo_shadow
+.fo_sd
 	@include single-box-shadow(#aaaaaa, 0, 0, 0.5em)
-.fo_shadowMin
+.fo_sd_min
 	@include single-box-shadow(#cccccc, 0, 0, 0.5em)
-.fo_shadowMax
+.fo_sd_max
 	@include single-box-shadow(#888888, 0, 0, 0.5em)
-@for $i from 1 through 10
-	.fo_shadow_#{$i}
-		@include single-box-shadow(#aaaaaa, 0, 0, $i)
 
 // Radius //
-.fo_radius
+.fo_rd
 	@include border-radius(0.5em)
-.fo_radiusMin
+.fo_rd_min
 	@include border-radius(0.25em)
-.fo_radiusMax
+.fo_rd_max
 	@include border-radius(1em)
-@for $i from 1 through 10
-	.fo_radius_#{$i}
-		@include border-radius($i)
 
 // Fix //
-.fo_fixTopLeft
+.fo_fx_tLeft
 	position: fixed
 	top: 0
 	left: 0
-.fo_fixTopRight
+.fo_fx_tRight
 	position: fixed
 	top: 0
 	right: 0
-.fo_fixBottomLeft
+.fo_fx_bLeft
 	position: fixed
 	bottom: 0
 	left: 0		
-.fo_fixBottomLeft
+.fo_fx_bRight
 	position: fixed
 	bottom: 0
 	right: 0
 
+// Absolute //
+@for $i from 1 through 20
+	@for $i from 1 through 20
+		.fo_ab_#{$i}_#{$j}
+			position absolute
+			top: $i * 5px
+			left: $j * 5px
+
 // Clear //
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
-	&.fo_clearStyle
+	&.fo_cl
+		display: none
+	&.fo_cl_set
 		margin: 0
 		padding: 0
 		border: 0
@@ -199,43 +232,39 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		font-size: 100%
 		vertical-align: baseline
 		background: none
-	&.fo_clearFix
+	&.fo_cl_fix
 		&:before, &:after
 			display: table
 			line-height: 0
 			content: ""
 		&:after
 			clear: both
-	&.fo_clearText
+	&.fo_cl_text
 		text-indent: -9999px
 		white-space: nowrap
 		line-height: 0
 		font-size: 0
-
-// Hide //
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 	
-	&.fo_hide
-		display: none
-	&.fo_hideRadius
+	&.fo_cl_radius
 		@include border-radius(0)
-	&.fo_hideBorder
+	&.fo_cl_border
 		border-width: 0
 		>td, >tr, >th, >li, >dt, >dd
 			border-width: 0
-	&.fo_hideBorder_x
+	&.fo_cl_border_x
 		border-top-width: 0
 		border-bottom-width: 0
 		>td, >tr, >th, >li, >dt, >dd
 		border-top-width: 0
 		border-bottom-width: 0
-	&.fo_hideBorder_y
+	&.fo_cl_border_y
 		border-left-width: 0
 		border-right-width: 0
 		>td, >tr, >th, >li, >dt, >dd
 		border-left-width: 0
 		border-right-width: 0
 
-.fo_polaroid
+// Images //
+.fo_img
 	@include box-sizing(border-box)
 	@include border-radius(3px)	
 	@include single-box-shadow(#888888, 0, 0, 10px)
