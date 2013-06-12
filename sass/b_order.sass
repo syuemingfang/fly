@@ -3,211 +3,211 @@
 
 // Width & Height //
 @for $i from 1 through 20
-	.fo_wd_#{$i*5}
+	.b_wd_#{$i*5}
 		float: left
 		width: $i * 5%
-	.fo_ht_#{$i*5}
+	.b_ht_#{$i*5}
 		float: left
 		height: $i * 5%
 
 // Base //
-.fo_wp
+.b_wp
 	position: relative	
 	width: 100%
 	overflow: hidden
 
 // Background //
-.fo_bg_white
+.b_bg_white
 	background-color: #FFFFFF
-.fo_bg_gray
+.b_bg_gray
 	background-color: #aaaaaa
-.fo_bg_blue
+.b_bg_blue
 	color: #ffffff
 	background-color: #404040	
 	&:link, &:visited, &:hover, &:active
 		color: #FFFFFF
-.fo_bg_red
+.b_bg_red
 	color: #ffffff
 	background-color: #FF0000
 	&:link, &:visited, &:hover, &:active
 		color: #FFFFFF
-.fo_bg_orange
+.b_bg_orange
 	color: #ffffff
 	background-color: #FFA500
 	&:link, &:visited, &:hover, &:active
 		color: #FFFFFF
-.fo_bg_yellow
+.b_bg_yellow
 	color: #ffffff
 	background-color: #FFBF00
 	&:link, &:visited, &:hover, &:active
 		color: #FFFFFF
-.fo_bg_green
+.b_bg_green
 	color: #ffffff
 	background-color: #008000
 	&:link, &:visited, &:hover, &:active
 		color: #FFFFFF
-.fo_bg_blue
+.b_bg_blue
 	color: #ffffff
 	background-color: #0000FF
 	&:link, &:visited, &:hover, &:active
 		color: #FFFFFF
-.fo_bg_indigo
+.b_bg_indigo
 	color: #ffffff
 	background-color: #4B0082
 	&:link, &:visited, &:hover, &:active
 		color: #FFFFFF
-.fo_bg_violet
+.b_bg_violet
 	color: #ffffff
 	background-color: #800880
 	&:link, &:visited, &:hover, &:active
 		color: #FFFFFF
 
 // Text Color //	
-.fo_tc_white
+.b_tc_white
 	color: #FFFFFF
 	&:link, &:visited, &:hover, &:active
 		color: #FFFFFF
-.fo_tc_gray
+.b_tc_gray
 	color: #aaaaaa
 	&:link, &:visited, &:hover, &:active
 		color: #aaaaaa
-.fo_tc_blue
+.b_tc_blue
 	color: #404040
 	&:link, &:visited, &:hover, &:active
 		color: #404040
-.fo_tc_red
+.b_tc_red
 	color: #FF0000
 	&:link, &:visited, &:hover, &:active
 		color: #FF0000
-.fo_tc_orange
+.b_tc_orange
 	color: #FFA500
 	&:link, &:visited, &:hover, &:active
 		coleor: #FFA500
-.fo_tc_yellow
+.b_tc_yellow
 	color: #FFBF00
 	&:link, &:visited, &:hover, &:active
 		color: #FFBF00
-.fo_tc_green
+.b_tc_green
 	color: #008000
 	&:link, &:visited, &:hover, &:active
 		color: #008000
-.fo_tc_blue
+.b_tc_blue
 	color: #0000FF
 	&:link, &:visited, &:hover, &:active
 		color: #0000FF
-.fo_tc_indigo
+.b_tc_indigo
 	color: #4B0082
 	&:link, &:visited, &:hover, &:active
 		color: #4B0082
-.fo_tc_violet
+.b_tc_violet
 	color: #800880
 	&:link, &:visited, &:hover, &:active
 		color: #800880
 
 // Text Size //
-.fo_ts_max
+.b_ts_max
 	font-size: 120%
-.fo_ts_min
+.b_ts_min
 	font-size: 82.5%
 
 // Text Align //
-.fo_ta_left
+.b_ta_left
 	text-align: left
-.fo_ta_center
+.b_ta_center
 	text-align: center
-.fo_ta_right
+.b_ta_right
 	text-align: right
 
 // Opacity //
-.fo_op	
+.b_op	
 	@include opacity(0.7)
-.fo_op_min
+.b_op_min
 	@include opacity(0.8)
-.fo_op_max
+.b_op_max
 	@include opacity(0.3)
 
 // Padding //
-.fo_pd
+.b_pd
 	padding-left: 0.5em
 	padding-bottom: 0.5em
 	padding-top: 0.5em
 	padding-right: 0.5em
-.fo_pd_max
+.b_pd_max
 	padding-left: 1em
 	padding-bottom: 1em
 	padding-top: 1em
 	padding-right: 1em
-.fo_pd_min
+.b_pd_min
 	padding-left: 0.25em
 	padding-bottom: 0.25em
 	padding-top: 0.25em
 	padding-right: 0.25em
 
 // Margin //
-.fo_mg
+.b_mg
 	margin-left: 0.5em
 	margin-bottom: 0.5em
 	margin-top: 0.5em
 	margin-right: 0.5em
-.fo_mg_max
+.b_mg_max
 	margin-left: 1em
 	margin-bottom: 1em
 	margin-top: 1em
 	margin-right: 1em
-.fo_mg_min
+.b_mg_min
 	margin-left: 0.25em
 	margin-bottom: 0.25em
 	margin-top: 0.25em
 	margin-right: 0.25em
 
 // float //
-.fo_fl_left
+.b_fl_left
 	float: left
-.fo_fl_right
+.b_fl_right
 	float: right
-.fo_fl_center
+.b_fl_center
 	margin: 0 auto 
 
 // Pull //	
-.fo_x
+.b_x
 	display: inline
 	>li, >dt, >dd
 		display: inline
-.fo_y
+.b_y
 	display: block
 	>li, >dt, >dd
 		display: block
 
 // Shadow //	
-.fo_sd
+.b_sd
 	@include single-box-shadow(#aaaaaa, 0, 0, 0.5em)
-.fo_sd_min
+.b_sd_min
 	@include single-box-shadow(#cccccc, 0, 0, 0.5em)
-.fo_sd_max
+.b_sd_max
 	@include single-box-shadow(#888888, 0, 0, 0.5em)
 
 // Radius //
-.fo_rd
+.b_rd
 	@include border-radius(0.5em)
-.fo_rd_min
+.b_rd_min
 	@include border-radius(0.25em)
-.fo_rd_max
+.b_rd_max
 	@include border-radius(1em)
 
 // Fix //
-.fo_fx_tLeft
+.b_fx_tLeft
 	position: fixed
 	top: 0
 	left: 0
-.fo_fx_tRight
+.b_fx_tRight
 	position: fixed
 	top: 0
 	right: 0
-.fo_fx_bLeft
+.b_fx_bLeft
 	position: fixed
 	bottom: 0
 	left: 0		
-.fo_fx_bRight
+.b_fx_bRight
 	position: fixed
 	bottom: 0
 	right: 0
@@ -215,16 +215,16 @@
 // Absolute //
 @for $i from 1 through 20
 	@for $i from 1 through 20
-		.fo_ab_#{$i}_#{$j}
+		.b_ab_#{$i}_#{$j}
 			position absolute
 			top: $i * 5px
 			left: $j * 5px
 
 // Clear //
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
-	&.fo_cl
+	&.b_cl
 		display: none
-	&.fo_cl_set
+	&.b_cl_set
 		margin: 0
 		padding: 0
 		border: 0
@@ -232,31 +232,31 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		font-size: 100%
 		vertical-align: baseline
 		background: none
-	&.fo_cl_fix
+	&.b_cl_fix
 		&:before, &:after
 			display: table
 			line-height: 0
 			content: ""
 		&:after
 			clear: both
-	&.fo_cl_text
+	&.b_cl_text
 		text-indent: -9999px
 		white-space: nowrap
 		line-height: 0
 		font-size: 0
-	&.fo_cl_radius
+	&.b_cl_radius
 		@include border-radius(0)
-	&.fo_cl_border
+	&.b_cl_border
 		border-width: 0
 		>td, >tr, >th, >li, >dt, >dd
 			border-width: 0
-	&.fo_cl_border_x
+	&.b_cl_border_x
 		border-top-width: 0
 		border-bottom-width: 0
 		>td, >tr, >th, >li, >dt, >dd
 		border-top-width: 0
 		border-bottom-width: 0
-	&.fo_cl_border_y
+	&.b_cl_border_y
 		border-left-width: 0
 		border-right-width: 0
 		>td, >tr, >th, >li, >dt, >dd
@@ -264,7 +264,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		border-right-width: 0
 
 // Images //
-.fo_img
+.b_img
 	@include box-sizing(border-box)
 	@include border-radius(3px)	
 	@include single-box-shadow(#888888, 0, 0, 10px)

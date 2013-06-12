@@ -12,57 +12,57 @@
 	$colorDeSat: desaturate($color, 20%)
 	$colorVeryDeSat: desaturate($colorDark, 40%)
 	// Header Main //
-	[class*=fl_header_main]
+	[class*=fl_hd_m]
 		color: #ffffff
 		line-height: 1.6
-	.fl_header_main1, .fl_header#{$type}_main1
+	.b_hd_m1, .b_hd#{$type}_m1
 		padding-left: 0.5em
 		background-color: $color
 		@include background-image(linear-gradient(top, $color, $colorDark))
-	.fl_header_main2, .fl_header#{$type}_main2
+	.b_hd_m2, .b_hd#{$type}_m2
 		padding-left: 0.5em
 		background-color: $color
 		@include background-image(linear-gradient(top, $color, $colorDark))
-	.fl_header_main3, .fl_header#{$type}_main3
+	.b_hd_m3, .b_hd#{$type}_m3
 		padding-left: 0.5em
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $color, $colorDark, $color))
 		@include border-radius(5px)
-	.fl_header_main4, .fl_header#{$type}_main4
+	.b_hd_m4, .b_hd#{$type}_m4
 		padding-left: 0.5em
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $colorDark, $color))
 		@include border-radius(15px)
-	.fl_header_main5, .fl_header#{$type}_main5
+	.b_hd_m5, .b_hd#{$type}_m5
 		padding-left: 0.5em
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $colorDark 40%, #ffffff))
-	.fl_header_main6, .fl_header#{$type}_main6
+	.b_hd_m6, .b_hd#{$type}_m6
 		padding-left: 0.5em
 		background-color: $colorCompound
 		@include background-image(linear-gradient(top, $colorCompound, $colorDeSat))
 		@include border-bottom-left-radius(10px)
 		@include border-bottom-right-radius(10px)
-	.fl_header_main7, .fl_header#{$type}_main7
+	.b_hd_m7, .b_hd#{$type}_m7
 		padding-left: 0.5em
 		border-bottom-color: $colorDark
 		border-bottom-style: solid
 		border-bottom-width: 2px
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, #ffffff 10%, $colorDark))
-	.fl_header_main8, .fl_header#{$type}_main8
+	.b_hd_m8, .b_hd#{$type}_m8
 		padding-left: 0.5em
 		border-bottom-color: $colorVeryDark
 		border-bottom-style: solid
 		border-bottom-width: 2px
 		background-color: $colorDark
-	.fl_header_main9, .fl_header#{$type}_main9
+	.b_hd_m9, .b_hd#{$type}_m9
 		border-left-color: $colorCompound
 		border-left-style: solid
 		border-left-width: 0.25em
 		padding-left: 0.5em
 		background-color: $color
-	.fl_header_main10, .fl_header#{$type}_main10
+	.b_hd_m10, .b_hd#{$type}_m10
 		padding-left: 0.5em
 		border-color: $colorDark
 		border-style: solid
@@ -70,17 +70,17 @@
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $colorDark, $color))
 		@include border-radius(15px)
-	.fl_header_main11, .fl_header#{$type}_main11
+	.b_hd_m11, .b_hd#{$type}_m11
 		padding-left: 0.5em
 		background-color: $colorDark
 		@include background-image(linear-gradient(top, $color, $colorDark, $color))
 		@include border-top-right-radius(15px)
 		@include border-top-left-radius(15px)
-	.fl_header_main12, .fl_header#{$type}_main12
+	.b_hd_m12, .b_hd#{$type}_m12
 		padding-left: 0.5em
 		background-color: $colorCompound
 		@include background-image(linear-gradient(top, $color, $colorCompound))	
-	.fl_header_main13, .fl_header#{$type}_main13
+	.b_hd_m13, .b_hd#{$type}_m13
 		position: relative
 		padding-left: 0.5em
 		background-color: $colorDark
@@ -95,11 +95,11 @@
 			z-index: 9999
 			right: 0
 			background-color: #ffffff
-	.fl_header_main14, .fl_header#{$type}_main14
+	.b_hd_m14, .b_hd#{$type}_m14
 		color: $colorCompound
 
 	// Header Sub //
-	.fl_header_sub1, .fl_header#{$type}_sub1
+	.b_hd_s1, .b_hd#{$type}_s1
 		color: $colorDeSat
 		line-height: 1.6
 		border-top-color: #dcdcdc
@@ -110,27 +110,27 @@
 		border-bottom-width: 1px
 		background-color: #ffffff
 		margin-bottom: 0
-	.fl_header_sub2, .fl_header#{$type}_sub2
+	.b_hd_s2, .b_hd#{$type}_s2
 		color: $colorDeSat
 		line-height: 1.6
 		border-left-color: #D5D4D9
 		border-left-style: solid	
 		border-left-width: 5px
 		padding-left: 5px
-	.fl_header_sub3, .fl_header#{$type}_sub3
+	.b_hd_s3, .b_hd#{$type}_s3
 		color: $colorDeSat
 		line-height: 1.6
 		border-left-color: $color
 		border-left-style: solid	
 		border-left-width: 5px
 		padding-left: 5px
-	.fl_header_sub4, .fl_header#{$type}_sub4
+	.b_hd_s4, .b_hd#{$type}_s4
 		color: $colorDeSat
 		line-height: 1.6
 		border-bottom-color: #C8C8C8
 		border-bottom-style: dotted	
 		border-bottom-width: 1px
-	.fl_header_sub5, .fl_header#{$type}_sub5
+	.b_hd_s5, .b_hd#{$type}_s5
 		color: $colorDeSat
 		line-height: 1.6
 		padding-left: 5px
@@ -140,13 +140,13 @@
 		border-left-color: $color
 		border-left-style: solid	
 		border-left-width: 5px
-	.fl_header_sub6, .fl_header#{$type}_sub6
+	.b_hd_s6, .b_hd#{$type}_s6
 		color: $colorDeSat
 		line-height: 1.6
 		border-bottom-color: $colorDeSat
 		border-bottom-style: solid
 		border-bottom-width: 5px
-	.fl_header_sub7, .fl_header#{$type}_sub7
+	.b_hd_s7, .b_hd#{$type}_s7
 		color: $colorDark
 		line-height: 1.6
 		border-bottom-color: $colorDark
@@ -154,7 +154,7 @@
 		border-bottom-width: 2px
 		background-color: #ffffff
 		@include background-image(linear-gradient(top, #ffffff 10%, #efefef))
-	.fl_header_sub8, .fl_header#{$type}_sub8
+	.b_hd_s8, .b_hd#{$type}_s8
 		color: $colorDeSat
 		line-height: 1.6
 		padding-left: 5px
@@ -164,12 +164,12 @@
 		border-top-color: $color
 		border-top-style: solid	
 		border-top-width: 5px
-	.fl_header_sub9, .fl_header#{$type}_sub9
+	.b_hd_s9, .b_hd#{$type}_s9
 		line-height: 1.6
 		font-weight: bold
 		color: $colorDeSat
 		letter-spacing: 0.5em
-	.fl_header_sub10, .fl_header#{$type}_sub10
+	.b_hd_s10, .b_hd#{$type}_s10
 		line-height: 1.6
 		font-weight: bold
 		color: $colorDeSat
@@ -183,7 +183,7 @@
 		border-bottom-width: 1px	
 		&:before
 			content: "| "	
-	.fl_header_sub11, .fl_header#{$type}_sub11
+	.b_hd_s11, .b_hd#{$type}_s11
 		line-height: 1.6
 		font-weight: bold
 		color: $colorDeSat
@@ -192,19 +192,19 @@
 		border-bottom-style: solid	
 		border-bottom-width: 1px	
 
-	// Block(Main) //
-	.fl_block_main1, .fl_block#{$type}_main1
+	// Block Main //
+	.b_bl_m1, .b_bl#{$type}_m1
 		color: #ffffff
 		padding: 5px
 		background-color: $color
-	.fl_block_main2, .fl_block#{$type}_main2
+	.b_bl_m2, .b_bl#{$type}_m2
 		color: #ffffff
 		padding: 5px
 		background-color: $color
 		border-color: $colorDark
 		border-style: dotted
 		border-width: 2px		
-	.fl_block_main3, .fl_block#{$type}_main3
+	.b_bl_m3, .b_bl#{$type}_m3
 		color: #ffffff
 		padding: 5px
 		background-color: $color
@@ -215,8 +215,8 @@
 		border-bottom-style: solid
 		border-bottom-width: 2px	
 
-	// Table(Main) //	
-	.fl_table_main1, .fl_table#{$type}_main1
+	// Table Main //	
+	.b_tb_m1, .b_tb#{$type}_m1
 		border-collapse: collapse
 		color: #666666
 		background-color: #ffffff
@@ -238,7 +238,7 @@
 			@include background-image(linear-gradient(top, $colorCompound, $colorDeSat))
 		td:first-child, th:first-child
 			border-left-width: 0
-	.fl_table_main2, .fl_table#{$type}_main2
+	.b_tb_m2, .b_tb#{$type}_m2
 		border-collapse: collapse
 		background-color: #ffffff	
 		tr
@@ -257,7 +257,7 @@
 			background-color: $colorDark
 			@include background-image(linear-gradient(top, $colorCompound, $colorDeSat))
 		td:first-child, th:first-child	
-	.fl_table_main3, .fl_table#{$type}_main3
+	.b_tb_m3, .b_tb#{$type}_m3
 		border-collapse: collapse
 		background-color: #ffffff
 		border-color: $colorDeSat
@@ -279,7 +279,7 @@
 			background-color: $colorDark
 			@include background-image(linear-gradient(top, $colorCompound, $colorDeSat))
 		td:first-child, th:first-child
-	.fl_table_main4, .fl_table#{$type}_main4
+	.b_tb_m4, .b_tb#{$type}_m4
 		border-collapse: collapse
 		background-color: #ffffff	
 		tr
@@ -298,7 +298,7 @@
 			background-color: $colorDark
 			@include background-image(linear-gradient(top, $colorCompound, $colorDeSat))
 		td:first-child, th:first-child	
-	.fl_table_main5, .fl_table#{$type}_main5
+	.b_tb_m5, .b_tb#{$type}_m5
 		border-collapse: collapse
 		color: #666
 		border-color: darken($colorDeSat, 10%)
@@ -322,7 +322,7 @@
 			background-color: $colorDark
 			@include background-image(linear-gradient(top, $colorCompound, $colorDeSat))
 		td:first-child, th:first-child
-	.fl_table_sub1, .fl_table#{$type}_sub1
+	.b_tb_s1, .b_tb#{$type}_s1
 		border-collapse: collapse
 		color: #666
 		border-color: darken($color, 10%)
@@ -344,7 +344,7 @@
 			border-color: $colorDark
 			background-color: #ffffff
 		td:first-child, th:first-child
-	.fl_table_sub2, .fl_table#{$type}_sub2
+	.b_tb_s2, .b_tb#{$type}_s2
 		border-collapse: collapse
 		background-color: #ffffff	
 		tr
@@ -366,7 +366,7 @@
 			border-bottom-style: solid	
 			border-bottom-width: 2px
 		td:first-child, th:first-child	
-	.fl_table_sub3, .fl_table#{$type}_sub3
+	.b_tb_s3, .b_tb#{$type}_s3
 		border-collapse: collapse
 		background-color: #ffffff
 		border-color: $colorDeSat
@@ -387,7 +387,7 @@
 			border-color: $colorDark
 			background-color: #ffffff
 		td:first-child, th:first-child
-	.fl_table_sub4, .fl_table#{$type}_sub4
+	.b_tb_s4, .b_tb#{$type}_s4
 		border-collapse: collapse
 		background-color: #ffffff	
 		tr
@@ -405,7 +405,7 @@
 			border-color: darken($colorDeSat, 10%)
 			background-color: #ffffff
 		td:first-child, th:first-child	
-	.fl_table_sub5, .fl_table#{$type}_sub5
+	.b_tb_s5, .b_tb#{$type}_s5
 		border-collapse: collapse
 		background-color: #ffffff
 		border-top-color: $color
@@ -427,8 +427,8 @@
 			background-color: #ffffff
 		td:first-child, th:first-child	
 
-	// List(Main) //	
-	.fl_list_main1, .fl_list#{$type}_main1
+	// List Main //	
+	.b_li_m1, .b_li#{$type}_m1
 		list-style: none
 		margin: 0
 		padding: 0
@@ -441,7 +441,7 @@
 			border-top-width: 1px
 		>li:first-child
 			border-width: 0
-	.fl_list_main2, .fl_list#{$type}_main2
+	.b_li_m2, .b_li#{$type}_m2
 		list-style: none
 		margin: 0
 		padding: 0
@@ -457,9 +457,9 @@
 			border-top-width: 1px
 		>li:first-child
 			border-width: 0
-	// Menu(Main) //	
-	.fl_menu_main1, .fl_menu#{$type}_main1
+	// Menu Main //	
+	.b_mu_m1, .b_mu#{$type}_m1
 
-	// Btn(Main) //
-	.fl_btn_main1, .fl_btn#{$type}_main1	
+	// Btn Main //
+	.b_btn_m1, .b_btn#{$type}_m1	
 
